@@ -6,7 +6,10 @@ import { getImageUrl } from '../../utils';
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false)
   return <nav className={styles.navbar}>
+    <div className={styles.navbarLeft}>
     <a className={styles.title} href="/">Portfolio</a>
+    <a href="mailto:cristinamachucam@gmail.com" className={styles.email}>cristinamachucam@gmail.com </a>
+    </div>
     <div className={styles.menu}>
         <img 
         className={styles.menuBtn} 
@@ -25,7 +28,13 @@ const Navbar = () => {
                 <a href="#about">About</a>
             </li>
             <li>
+                <a href="#experience">Resume</a>
+            </li>
+            <li>
                 <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#experience">Skills</a>
             </li>
             <li>
                 <a href="#projects">Projects</a>
@@ -33,6 +42,7 @@ const Navbar = () => {
             <li>
                 <a href="#contact">Contact</a>
             </li>
+            <a href="mailto:cristinamachucam@gmail.com" className={styles.hire}>Hire Me</a>
         </ul>
     </div>
   </nav>;

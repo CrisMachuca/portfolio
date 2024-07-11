@@ -26,13 +26,7 @@
     font-weight: 900;
     margin-bottom: 33px;
     font-family: var(--font-roboto);
-    background: linear-gradient(
-        90deg, 
-        rgba(255, 255, 255, 1) 70%,
-        rgba(255, 255, 255, 0) 120%
-    );
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    color: white;
 }
 .subtitle {
     font-size: 82px;
@@ -55,10 +49,14 @@
     justify-content: center;
     padding-right: 100px;
 }
-
+.heroBtns {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
 .contactBtn {
     text-decoration: none;
-    border: 3px solid #8D59F7;
+    border: 2px solid #8D59F7;
     color: #8D59F7;
     border-radius: 100px;
     font-size: 30px;
@@ -70,6 +68,20 @@
     background-color: #8D59F7;
     color: white;
 }
+
+.social {
+    border: 2px solid #8D59F7;
+    border-radius: 50%;
+    color: #8D59F7;
+    font-size: 50px;
+    padding: 5px;
+}
+
+.social:hover {
+    background-color: #8D59F7;
+    color: white;
+}
+
 .heroImg {
     width: 35%;
     border-radius: 10%;
