@@ -2,7 +2,7 @@
 
 .container {
     position: relative;
-    background-color: #171B22;
+    background-color: #050709;
     z-index: 1;
     
 }
@@ -75,6 +75,7 @@ li {
     display: flex;
     flex-direction: row;
     gap: 50px;
+    padding: 1em 3em;
 }
 
 .aboutItem {
@@ -107,6 +108,8 @@ li {
 .aboutItem p {
     font-size: 25px;
 }
+
+
 
 @media screen and (max-width: 830px) {
     .container {
