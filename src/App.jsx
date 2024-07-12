@@ -21,10 +21,6 @@ function App() {
       <Skills />
       <Projects />
       <Resume />
-      
-      
-      
-      
       <Contact />
     </div>
   )

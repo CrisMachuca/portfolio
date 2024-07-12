@@ -9,6 +9,7 @@
 
 
 .title {
+    padding-top: 50px;
     color: #fff;
     font-size: 35px;
     font-weight: 700;
@@ -18,8 +19,9 @@
 
 .subtitle {
     color: #797A7B;
-    text-align: justify;
-    padding: 3em;
+    text-align: center;
+    padding: 1em 2em 1em 2em;
+    max-width: 1200px;
     font-size: 30px;
     -webkit-animation-name: zoomInn;
   animation-name: zoomInn;
@@ -71,13 +73,14 @@ li {
 .aboutItems {
     color: var(--color-text);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 50px;
 }
 
 .aboutItem {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     align-items: center;
     border-radius: 20px;
     list-style: none;

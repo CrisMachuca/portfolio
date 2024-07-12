@@ -1,5 +1,9 @@
 @import "../../vars.css";
 
+.superContainer {
+    
+}
+
 .container {
     position: relative;
     width: 100%;
@@ -106,11 +110,11 @@
     top: -128px;
     left: -10vw;
     border: 764px;
-    background: linear-gradient(90deg, rgba(191,36,122,1) 0%, rgba(129,43,140,1) 24%, rgba(42,35,89,1) 62%);
+    background: linear-gradient(90deg, rgb(68, 29, 99) 0%, rgb(93, 43, 140) 24%, rgba(42,35,89,1) 62%);
     filter: blur(100px);
     z-index: 0;
 }
-    
+*/    
 
 .bottomBlur {
     position: absolute;
@@ -121,11 +125,90 @@
     top: 246px;
     right: -25vw;
     border-radius: 764px;
-    background: rgba(134, 40, 114, 0.7);
+    background: rgba(32, 3, 59, 0.7);
     filter: blur(100px);
     z-index: 0;
 }
-    */
+    
+    .services {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #0F0715;
+    }
+
+    .pointer {
+        color: rgb(255, 9, 222);
+        font-size: 50px;
+    }
+    .aboutItems {
+        color: white;
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        padding-bottom: 1em;
+    }
+    
+    .aboutItem {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border-radius: 20px;
+        list-style: none;
+        padding: 25px;
+        
+    }
+    
+    .aboutItem:hover {
+        border: 3px solid #6020F5;
+        font-size: 45px;
+    }
+    
+    .aboutItem h3 {
+        font-size: 35px;
+        font-weight: 600;
+        -webkit-animation-name: zoomIn;
+        animation-name: zoomIn;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+    }
+    @-webkit-keyframes zoomIn {
+    0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+    }
+    50% {
+    opacity: 1;
+    }
+    }
+    @keyframes zoomIn {
+    0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+    }
+    50% {
+    opacity: 1;
+    }
+        }
+    
+    .aboutItem p {
+        font-size: 25px;
+    }
+
+.front {
+    color: rgb(255, 9, 222);
+}
+.back {
+    color: #5FBCFF;
+}
+    
+
+
 
 @media screen and (max-width: 830px) {
     .container {

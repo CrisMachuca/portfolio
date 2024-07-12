@@ -8,45 +8,12 @@ export const About = () => {
     <section className={styles.container} id="about">
         
         <h2 className={styles.title}>About Me.</h2>
-        <p className={styles.subtitle}>Hello! I’m Cristina a self-taught Web Designer & Developer. I started in my children’s room and got professional knowledge until nowadays.</p>
-        <div className={styles.details}>
-            <ul>
-                <li>Phone: (+34) 660 800 631</li>
-                <li>Email: cristinamachucam@gmail.com</li>
-                <li>Languages: English, Spanish</li>
-            </ul>
+        
+        
+        <p className={styles.subtitle}>Hi, my name is Cristina Machuca and I've spent most of my waking hours for the last  years learning, designing, programming and operating Web sites. Apart from this I love to travel, the rock music and everything related to web development. I am deeply committed to the success of every project I work on and take great joy in the development process, from initial concept to final deployment. I believe in the power of collaboration and creativity to build exceptional websites and applications.</p>
+       
 
-        </div>
-        <div className={styles.content}>
-            <img
-            src={getImageUrl("about/aboutImage.png")}
-            alt='Me sitting with a laptop'
-            className={styles.aboutImage}
-            />
-            <ul className={styles.aboutItems}>
-                <li className={styles.aboutItem}>
-                    <img src={getImageUrl("about/cursorIcon.png")} alt="Cursor icon" />
-                    <div className={styles.aboutItemText}>
-                        <h3>Frontend Developer</h3>
-                        <p>I'm a frontend developer with experience in building responsive and optimized sites</p>
-                    </div>
-                </li>
-                <li className={styles.aboutItem}>
-                    <img src={getImageUrl("about/serverIcon.png")} alt="Server icon" />
-                    <div className={styles.aboutItemText}>
-                        <h3>Backend Developer</h3>
-                        <p>I'm a backend developer with experience developing APIs</p>
-                    </div>
-                </li>
-                <li className={styles.aboutItem}>
-                    <img src={getImageUrl("about/cursorIcon.png")} alt="Cursor icon" />
-                    <div className={styles.aboutItemText}>
-                        <h3>UX/UI</h3>
-                        <p>I'm a backend developer with experience developing APIs</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
+        <p className={styles.subtitle}>Let's work together to bring your ideas to life with dedication and expertise.</p>
     </section>
   );
 };
