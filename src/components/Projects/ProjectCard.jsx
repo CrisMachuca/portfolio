@@ -15,7 +15,7 @@ export const ProjectCard = ({ project : {title, imageSrc, description, skills, d
                       />
                     </div>
                     <div className={styles.more}>
-                      <h3 className={styles.title}>{title}</h3>
+                      <h2 className={styles.title}>{title}</h2>
                       <p className={styles.description}>{description}</p>
                     </div>
                     

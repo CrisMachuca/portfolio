@@ -24,7 +24,7 @@
     text-align: center;
     color:white;
     font-size: 70px;
-    padding-bottom: 2em;
+    padding-bottom: 1.5em;
     -webkit-animation-name: zoomIn;
   animation-name: zoomIn;
   -webkit-animation-duration: 1s;
@@ -62,23 +62,26 @@
   
   .filters {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
   }
   
   .filters button {
     margin: 0 10px;
     padding: 10px 20px;
     cursor: pointer;
-    background-color: #f0f0f0;
+    background: none;
     border: none;
-    border-radius: 5px;
+    color: white;  
+    font-size: 30px;
+    border: none;
+    border-radius: 10px;
     transition: background-color 0.3s;
   }
   
   .filters button:hover {
-    background-color: #ddd;
+    background-color: blueviolet;
   }
-  
+ 
   .masonryGrid {
     display: flex;
     margin-left: -30px; /* gutter size offset */
