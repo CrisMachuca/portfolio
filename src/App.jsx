@@ -2,9 +2,9 @@
 import styles from './App.module.css';
 import { About } from './components/About/About';
 import { Contact } from './components/Contact/Contact';
-import { Experience } from './components/Experience/Experience';
+import { Skills } from './components/Skills/Skills';
 import { Hero } from './components/Hero/Hero';
-
+import { Resume } from './components/Resume/Resume';
 import Navbar from './components/Navbar/Navbar';
 import { Projects } from './components/Projects/Projects';
 
@@ -17,8 +17,10 @@ function App() {
     <div className={styles.App}>
       <Navbar />
       <Hero />
+      <Skills />
       <About />
-      <Experience />
+      <Resume />
+      
       <Projects />
       <Contact />
     </div>
