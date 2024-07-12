@@ -9,7 +9,7 @@
     },
     {
       "title": "Guau...Guau",
-      "imageSrc": "projects/project.png",
+      "imageSrc": "projects/guauu.jpg",
       "description": "This is a project made to learn the latest languages by building an app.",
       "skills": ["React", "Express", "Node"],
       "demo": "https://www.example.com",
@@ -17,7 +17,7 @@
     },
     {
       "title": "Propaganda film",
-      "imageSrc": "projects/project.png",
+      "imageSrc": "projects/starwars.png",
       "description": "This is a project made to learn the latest languages by building an app.",
       "skills": ["React", "Express", "Node", "Sass"],
       "demo": "https://www.example.com",
@@ -25,7 +25,7 @@
     },
     {
       "title": "StarWars",
-      "imageSrc": "projects/project.png",
+      "imageSrc": "projects/propaganda.png",
       "description": "This is a project made to learn the latest languages by building an app.",
       "skills": ["React", "Express", "Node"],
       "demo": "https://www.example.com",
@@ -33,7 +33,15 @@
     },
     {
       "title": "Ahorcado",
-      "imageSrc": "projects/project.png",
+      "imageSrc": "projects/hangman.png",
+      "description": "This is a project made to learn the latest languages by building an app.",
+      "skills": ["React", "Express", "Node"],
+      "demo": "https://www.example.com",
+      "source": "https://www.github.com"
+    },
+    {
+      "title": "Domain Generator",
+      "imageSrc": "projects/domain.png",
       "description": "This is a project made to learn the latest languages by building an app.",
       "skills": ["React", "Express", "Node"],
       "demo": "https://www.example.com",

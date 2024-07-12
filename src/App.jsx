@@ -18,10 +18,12 @@ function App() {
       <Navbar />
       <Hero />
       <Skills />
-      <About />
-      <Resume />
-      
       <Projects />
+      <Resume />
+      <About />
+      
+      
+      
       <Contact />
     </div>
   )

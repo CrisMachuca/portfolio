@@ -4,21 +4,49 @@
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    background: linear-gradient(180deg, #ffc2ff 0%, #fa8fe8 100%);
+    background-color: #140C1C;
     box-shadow: 0 16px 14px 0 rgba(0, 0, 0, 0.2);
     padding: 18px 24px;
-    max-width: 345px;
+    max-width: 350px;
 }
-
+.imageContainer {
+    width: 100%;
+    height: 350px; /* Altura fija para todas las imágenes */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #140C1C; /* Fondo de relleno para imágenes pequeñas */
+}
 .image {
     margin-bottom: 26px;
+    width: 100%;
+    height: 100%;
+    object-fit:contain; /* Ajusta la imagen manteniendo la relación de aspecto */
 }
 
 .title {
     font-size: 25px;
     font-weight: 700;
 }
-
+.more {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+    color: #fff;
+    padding: 10px;
+    opacity: 0;
+    transform: translateY(100%); /* Inicialmente oculto (fuera de la vista) */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Transición suave */
+}
+.container:hover .description{
+    
+        opacity: 1;
+        transform: translateY(0); /* Muestra la descripción al pasar el ratón */
+    
+}
 .description {
     margin-top: 6px;
     font-size: 25px;
