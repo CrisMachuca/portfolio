@@ -1,48 +1,60 @@
 [
     {
+      "id": 1,
+      "category": "e-commerce",
       "title": "FriKommerce",
       "imageSrc": "projects/project.png",
-      "description": "This is a project made to learn the latest languages by building an app.",
+      "description": "E-commerce friki stuff",
       "skills": ["React", "Express", "Node"],
       "demo": "https://www.example.com",
       "source": "https://www.github.com"
     },
     {
+      "id": 2,
+      "category": "web aplication",
       "title": "Guau...Guau",
       "imageSrc": "projects/guauu.jpg",
-      "description": "This is a project made to learn the latest languages by building an app.",
+      "description": "Web app for dog's dates.",
       "skills": ["React", "Express", "Node"],
       "demo": "https://www.example.com",
       "source": "https://www.github.com"
     },
     {
+      "id": 3,
+      "category": "Landing Page",
       "title": "Propaganda film",
-      "imageSrc": "projects/starwars.png",
-      "description": "This is a project made to learn the latest languages by building an app.",
+      "imageSrc": "projects/propaganda.png",
+      "description": "Landing Page",
       "skills": ["React", "Express", "Node", "Sass"],
       "demo": "https://www.example.com",
       "source": "https://www.github.com"
     },
     {
+      "id": 4,
+      "category": "personal project",
       "title": "StarWars",
-      "imageSrc": "projects/propaganda.png",
-      "description": "This is a project made to learn the latest languages by building an app.",
+      "imageSrc": "projects/starwarsp.png",
+      "description": "Personal proyect",
       "skills": ["React", "Express", "Node"],
       "demo": "https://www.example.com",
       "source": "https://www.github.com"
     },
     {
+      "id": 5,
+      "category": "personal project",
       "title": "Ahorcado",
       "imageSrc": "projects/hangman.png",
-      "description": "This is a project made to learn the latest languages by building an app.",
+      "description": "A game",
       "skills": ["React", "Express", "Node"],
       "demo": "https://www.example.com",
       "source": "https://www.github.com"
     },
     {
+      "id": 6,
+      "category": "web aplication",
       "title": "Domain Generator",
       "imageSrc": "projects/domain.png",
-      "description": "This is a project made to learn the latest languages by building an app.",
+      "description": "Web aplication",
       "skills": ["React", "Express", "Node"],
       "demo": "https://www.example.com",
       "source": "https://www.github.com"

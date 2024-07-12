@@ -1,7 +1,7 @@
 @import "../../vars.css";
 
 .container {
-    padding: 76px 10%;
+    padding: 76px 12em;
     color: var(--color-text);
     background-color: #0F0715;
 }
@@ -20,14 +20,78 @@
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
+.subtitle {
+    text-align: center;
+    color:white;
+    font-size: 70px;
+    padding-bottom: 2em;
+    -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes zoomIn {
+  0% {
+  opacity: 0;
+  -webkit-transform: scale3d(.3, .3, .3);
+  transform: scale3d(.3, .3, .3);
+  }
+  50% {
+  opacity: 1;
+  }
+  }
+  @keyframes zoomIn {
+  0% {
+  opacity: 0;
+  -webkit-transform: scale3d(.3, .3, .3);
+  transform: scale3d(.3, .3, .3);
+  }
+  50% {
+  opacity: 1;
+  }
+  } 
 
-.projects {
-    margin-top: 37px;
+
+  
+  .title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .filters {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .filters button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .filters button:hover {
+    background-color: #ddd;
+  }
+  
+  .masonryGrid {
     display: flex;
-    flex-direction: row;
+    margin-left: -30px; /* gutter size offset */
+    width: auto;
+  }
+  
+  .masonryGridColumn {
+    padding-left: 30px; /* gutter size */
+    background-clip: padding-box;
+  }
+  
+  .projects {
+    display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
-    gap: 15px;
-    width: 100%;   
-}
+  }
