@@ -19,7 +19,44 @@
 .subtitle {
     color: #797A7B;
     text-align: justify;
-    padding: 2em;
+    padding: 3em;
+    font-size: 30px;
+    -webkit-animation-name: zoomInn;
+  animation-name: zoomInn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes zoomInn {
+  0% {
+  opacity: 0;
+  -webkit-transform: scale3d(.3, .3, .3);
+  transform: scale3d(.3, .3, .3);
+  }
+  50% {
+  opacity: 1;
+  }
+  }
+  @keyframes zoomInn {
+  0% {
+  opacity: 0;
+  -webkit-transform: scale3d(.3, .3, .3);
+  transform: scale3d(.3, .3, .3);
+  }
+  50% {
+  opacity: 1;
+  }
+  } 
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+li {
+    color: white;
 }
 .content {
     display: flex;

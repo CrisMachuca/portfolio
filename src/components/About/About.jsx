@@ -7,8 +7,16 @@ export const About = () => {
   return (
     <section className={styles.container} id="about">
         
-        <h2 className={styles.title}>About</h2>
+        <h2 className={styles.title}>About Me.</h2>
         <p className={styles.subtitle}>Hello! I’m Cristina a self-taught Web Designer & Developer. I started in my children’s room and got professional knowledge until nowadays.</p>
+        <div className={styles.details}>
+            <ul>
+                <li>Phone: (+34) 660 800 631</li>
+                <li>Email: cristinamachucam@gmail.com</li>
+                <li>Languages: English, Spanish</li>
+            </ul>
+
+        </div>
         <div className={styles.content}>
             <img
             src={getImageUrl("about/aboutImage.png")}
