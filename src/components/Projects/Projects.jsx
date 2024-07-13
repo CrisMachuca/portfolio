@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 
 import styles from "./Projects.module.css"
-import Masonry from 'react-masonry-css';
 import projects from "../../data/projects.json"
 import { ProjectCard } from './ProjectCard'
+import { Gallery } from '../Gallery/Gallery';
 
 export const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -25,19 +25,16 @@ export const Projects = () => {
         <button onClick={() => setSelectedCategory('Landing Page')}>Landing Page</button>
         <button onClick={() => setSelectedCategory('personal project')}>Personal Project</button>
       </div>
-      <Masonry
-        breakpointCols={breakpointColumnsObj}
-        className={styles.masonryGrid}
-        columnClassName={styles.masonryGridColumn}
-      >
+      
+      <div className={styles.galleryContainer}>
         {
           projects
             .filter(project => selectedCategory === 'all' || project.category === selectedCategory)
             .map((project, id) => {
-              return <ProjectCard key={id} project={project} />;
+              return <Gallery key={id} project={project} />;
             })
         }
-      </Masonry>
+      </div>
   </section>
   )
 }

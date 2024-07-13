@@ -91,7 +91,7 @@
     border-radius: 10%;
     border: 3px solid rgb(96, 32, 245);
     z-index: 1;
-    background-color: rgb(28, 23, 29);
+    background-color: transparent;
     transform: rotate(8deg);
     transition: transform 0.5s ease-in-out;
 }

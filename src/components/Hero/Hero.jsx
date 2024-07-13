@@ -9,7 +9,7 @@ export const Hero = () => {
   <section className={styles.superContainer}>
     <div className={styles.container}>
       <div className={styles.content}>
-          <h1 className={styles.title}>I`m Cristina Machuca</h1>
+          <h1 className={styles.title}>I'm Cristina Machuca</h1>
           <h2 className={styles.subtitle}>Full Stack Developer</h2>
           <div className={styles.services}>
             
@@ -38,7 +38,7 @@ export const Hero = () => {
           </div>
       </div>
       <img 
-          src={getImageUrl("hero/heroImage5.png")} alt="Hero image of me" className={styles.heroImg}/>
+          src={getImageUrl("hero/profilecrop.png")} alt="Hero image of me" className={styles.heroImg}/>
       <div className={styles.topBlur}></div>
       <div className={styles.bottomBlur}></div>
     
