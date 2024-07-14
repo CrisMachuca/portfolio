@@ -11,8 +11,11 @@
     overflow: hidden;
     background: #ffffff;
     border-radius: 10px;
-    padding: 10px;
-    padding-bottom: 5em;
+    box-shadow: 0 0 10px #8D59F7;
+    padding-bottom: 150px;
+    /*-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);*/
 }
 
 .galleryItem img {
@@ -27,13 +30,17 @@
     transform: scale(1.1);
 }
 
+.title {
+    padding: 10px;
+}
+
 .caption {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     padding: 10px;
-    background: rgba(0, 0, 0, 0.7);
+    background: #8D59F7;
     color: #fff;
     text-align: center;
     font-size: 1rem;

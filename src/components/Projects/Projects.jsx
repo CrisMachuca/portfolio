@@ -2,17 +2,11 @@ import React, { useState } from 'react'
 
 import styles from "./Projects.module.css"
 import projects from "../../data/projects.json"
-import { ProjectCard } from './ProjectCard'
 import { Gallery } from '../Gallery/Gallery';
 
 export const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
 
-  const breakpointColumnsObj = {
-    default: 3,
-    1100: 2,
-    700: 1
-  };
 
   return (
   <section className={styles.container} id='projects'>
