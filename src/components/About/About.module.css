@@ -18,6 +18,7 @@
     text-align: center;
     font-weight: 900;
     font-family: var(--font-roboto);
+    filter: drop-shadow(15px 15px 5px #8D59F7);
     display: inline-block; /* Necesario para que la rotación funcione correctamente */
     transform: rotate(-4deg); /* Cambia el ángulo según lo necesario */
     background: linear-gradient(
@@ -122,6 +123,7 @@ li {
 .aboutImage {
     width: 35%;
     border-radius: 15px;
+    filter: drop-shadow(10px 7px 10px rgb(145, 1, 228))
 }
 
 .aboutItems {
