@@ -7,6 +7,7 @@ import { Hero } from './components/Hero/Hero';
 import { Resume } from './components/Resume/Resume';
 import Navbar from './components/Navbar/Navbar';
 import { Projects } from './components/Projects/Projects';
+import { Divisor } from './components/Divisor/Divisor';
 
 
 
@@ -17,6 +18,7 @@ function App() {
     <div className={styles.App}>
       <Navbar />
       <Hero />
+      <Divisor />
       <About />
       <Skills />
       <Projects />

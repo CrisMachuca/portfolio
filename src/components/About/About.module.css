@@ -4,53 +4,99 @@
     position: relative;
     background-color: #050709;
     z-index: 1;
-    
+    padding-top: 6em;
+    padding-bottom: 6em;
 }
 
 
 .title {
-    padding-top: 50px;
-    color: #fff;
-    font-size: 35px;
-    font-weight: 700;
-    letter-spacing: 1,75px;
+    font-size: 60px;
     text-align: center;
+    font-weight: 900;
+    
+    font-family: var(--font-roboto);
+    background: linear-gradient(
+        90deg, 
+        #8D59F7 20%,
+        rgb(255, 255, 255) 100%
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 .subtitle {
     color: #797A7B;
     text-align: center;
-    padding: 1em 2em 1em 2em;
+    padding: 0.5em 3em 1em 3em;
     max-width: 1200px;
     font-size: 30px;
+    line-height: 1.7;
     -webkit-animation-name: zoomInn;
-  animation-name: zoomInn;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
+    animation-name: zoomInn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
   }
   @-webkit-keyframes zoomInn {
-  0% {
-  opacity: 0;
-  -webkit-transform: scale3d(.3, .3, .3);
-  transform: scale3d(.3, .3, .3);
-  }
-  50% {
-  opacity: 1;
-  }
-  }
+    0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+    }
+    50% {
+    opacity: 1;
+    }
+    }
   @keyframes zoomInn {
-  0% {
-  opacity: 0;
-  -webkit-transform: scale3d(.3, .3, .3);
-  transform: scale3d(.3, .3, .3);
-  }
-  50% {
-  opacity: 1;
-  }
+    0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+    }
+    50% {
+    opacity: 1;
+    }
   } 
 
+.accent {
+    color: rgb(140, 50, 214);
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+
+.aboutText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.connect {
+    padding: 20px 20px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+    text-shadow: none;
+    background: transparent;
+    cursor: pointer;
+    box-shadow: transparent;
+    border: 1px solid #8D59F7;
+    transition: 0.5s ease;
+    user-select: none;
+    align-self: center;
+  }
+  
+  .connect:hover,
+  :focus {
+    color: #ffffff;
+    background: #8D59F7;
+    border: 1px solid #8D59F7;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+    box-shadow: 0 0 5px #8D59F7, 0 0 20px #8D59F7, 0 0 50px #8D59F7,
+      0 0 100px #8D59F7;
+  }
 .details {
     display: flex;
     flex-direction: column;
@@ -68,6 +114,7 @@ li {
 
 .aboutImage {
     width: 35%;
+    border-radius: 15px;
 }
 
 .aboutItems {
