@@ -148,7 +148,7 @@
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        background-color: #0F0715;
+        background-color: transparent;
     }
 
     .pointer {
@@ -242,7 +242,11 @@
         text-align: center;
     }
     .heroImg {
-        display: none;
+        width: 70%;
+        border: none;
+        border-radius: 0%;
+        transform: rotate(0);
+        filter: grayscale(1);
     }
     .title {
         font-size: 36px;
