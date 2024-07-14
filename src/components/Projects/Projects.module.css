@@ -80,7 +80,7 @@
     cursor: pointer;
     background: none;
     border: none;
-    color: white;  
+    color: blueviolet;  
     font-size: 30px;
     border: none;
     border-radius: 10px;
@@ -89,6 +89,7 @@
   
   .filters button:hover {
     background-color: blueviolet;
+    color: white;
   }
  
   .masonryGrid {
