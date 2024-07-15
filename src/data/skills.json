@@ -32,10 +32,6 @@
       "imageSrc": "skills/python1.png"
     },
     {
-      "title": "MongoDB",
-      "imageSrc": "skills/mongodb.png"
-    },
-    {
       "title": "Flask",
       "imageSrc": "skills/flask.png"
     },

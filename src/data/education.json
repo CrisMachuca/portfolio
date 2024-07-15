@@ -1,0 +1,18 @@
+[
+    {
+      "role": "Full Stack Developer",
+      "organisation": "4Geeks Spain",
+      "startDate": "2023",
+      "endDate": "2024",
+      "experiences": ["Worked on Google Maps", "Reduced load times by 50%"],
+      "imageSrc": "history/4geek.png"
+    },
+    {
+      "role": "Degree in Marketing and Market Research",
+      "organisation": "UMA",
+      "startDate": "2014",
+      "endDate": "2018",
+      "experiences": ["Worked on Windows 11", "Designed the control panel"],
+      "imageSrc": "history/uma.png"
+    }
+  ]

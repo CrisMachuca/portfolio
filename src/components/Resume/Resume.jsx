@@ -1,7 +1,7 @@
 import React from 'react';
 
 import styles from "./Resume.module.css"
-import skills from "../../data/skills.json"
+import education from "../../data/education.json"
 import history from "../../data/history.json"
 import { getImageUrl } from '../../utils';
 import { FaAward, FaUserGraduate } from "react-icons/fa";
@@ -31,13 +31,13 @@ export const Resume = () => {
         <h2 className={styles.title}><FaUserGraduate className={styles.icon}/> My Education</h2>
         <ul className={styles.history}>
             {
-                history.map((historyItem, id) => {
+                education.map((educationItem, id) => {
                     return (
                         <li key={id} className={styles.historyItem}>
                             
                             <div className={styles.historyItemDetails}>
-                                <h3>{`${historyItem.role}, ${historyItem.organisation}`}</h3>
-                                <p>{`${historyItem.startDate} - ${historyItem.endDate}`}</p>
+                                <h3>{`${educationItem.role}, ${educationItem.organisation}`}</h3>
+                                <p>{`${educationItem.startDate} - ${educationItem.endDate}`}</p>
                                 
                             </div>
                         </li>
