@@ -32,7 +32,6 @@ export const Hero = () => {
           <p className={styles.description}>From front-end aesthetics to back-end logic, I craft complete digital solutions. Ready to innovate together?</p>
           <div className={styles.heroBtns}>
             <a href="/CristinaMachucaResume.pdf" download className={styles.contactBtn}>Download CV <FaDownload /></a>
-            <a href=""><FaFacebook className={styles.social}/></a>
             <a href=""><FaLinkedin className={styles.social}/></a>
             <a href=""><FaGithub className={styles.social}/></a>
           </div>
