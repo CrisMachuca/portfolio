@@ -10,7 +10,7 @@ export const Hero = () => {
     <div className={styles.container}>
       <div className={styles.content}>
           <h1 className={styles.title}>I'm Cristina Machuca</h1>
-          <h2 className={styles.subtitle}>Full Stack Developer</h2>
+          <h2 className={styles.subtitle}>&lt;Full Stack Developer/&gt;</h2>
           <div className={styles.services}>
             
             <ul className={styles.aboutItems}>
@@ -41,9 +41,9 @@ export const Hero = () => {
           src={getImageUrl("hero/profilecrop.png")} alt="Hero image of me" className={styles.heroImg}/>
       <div className={styles.topBlur}></div>
       <div className={styles.bottomBlur}></div>
-    
-    </div>
       
+    </div>
+   
   </section>
   );
 };

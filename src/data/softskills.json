@@ -1,0 +1,22 @@
+[
+    {
+      "title": "Agile",
+      "description": "Agile in responding to new challenges and learning new skills quickly" ,
+      "imageSrc": "softskills/agile.png"
+    },
+    {
+      "title": "Dedicated",
+      "description": "Highly dedicated to delivering high-quality software solutions" ,
+      "imageSrc": "softskills/dedicated.png"
+    },
+    {
+      "title": "Dynamic",
+      "description": "I adapt quickly to evolving project requirements and technologies" ,
+      "imageSrc": "softskills/dynamic.png"
+    },
+    {
+      "title": "Responsive",
+      "description": "My layouts will work on any device, big or small" ,
+      "imageSrc": "softskills/responsive.png"
+    }
+  ]
