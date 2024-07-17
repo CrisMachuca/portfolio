@@ -3,10 +3,13 @@ import { FaHeart, FaFacebook, FaGithub, FaLinkedin, FaDownload } from "react-ico
 import styles from "./Hero.module.css";
 import { getImageUrl } from '../../utils';
 import { FaArrowPointer } from 'react-icons/fa6';
+import NavbarHero from '../Navbar/NavbarHero';
 
 export const Hero = () => {
   return (
   <section className={styles.superContainer}>
+    <NavbarHero />
+    
     <div className={styles.container}>
       <div className={styles.content}>
           <h1 className={styles.title}>I'm Cristina Machuca</h1>

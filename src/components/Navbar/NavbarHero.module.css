@@ -9,16 +9,8 @@
     z-index: 2;
     margin: 0;
     background: #0F0715;
-    transition: all 0.5s ease-in-out;
-    position: fixed;
-    top: -250px; /* Altura del navbar fuera de la vista */
-    left: 0;
-    right: 0;
-    z-index: 1000;
 }
-.navbarVisible {
-    top: 0; /* Navbar visible */
-  }
+
 .navbarLeft {
     display: flex;
     flex-direction: column;

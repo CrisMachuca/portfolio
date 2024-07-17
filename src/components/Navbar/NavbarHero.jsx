@@ -1,15 +1,15 @@
 import React, {useState, useEffect} from 'react';
 
-import styles from "./Navbar.module.css";
+import styles from "./NavbarHero.module.css";
 import { getImageUrl } from '../../utils';
 
-const Navbar = () => {
+const NavbarHero = () => {
     const [menuOpen, setMenuOpen] = useState(false)
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
-          if (window.scrollY >= 200) {
+          if (window.scrollY >= 300) {
             setIsVisible(true);
           } else {
             setIsVisible(false);
@@ -68,4 +68,4 @@ const Navbar = () => {
     
 };
 
-export default Navbar
+export default NavbarHero

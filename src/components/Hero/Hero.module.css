@@ -1,4 +1,5 @@
 @import "../../vars.css";
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 
 .superContainer {
     
@@ -59,17 +60,21 @@
 }
 
 .title {
-    font-size: 52px;
-    font-weight: 900;
+    font-size: 36px;
     margin-bottom: 33px;
-    font-family: var(--font-roboto);
     color: white;
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
 }
 .subtitle {
-    font-size: 82px;
-    font-weight: 900;
-    margin-bottom: 33px;
-    font-family: var(--font-roboto);
+    font-size: 65px;
+    margin-bottom: 23px;
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
     background: linear-gradient(
         90deg, 
         #8D59F7 60%,
@@ -79,12 +84,15 @@
     -webkit-background-clip: text;
 }
 .description {
-    font-size: 30px;
-    font-family: var(--font-roboto);
+    font-size: 20px;
     margin-bottom: 52px;
     color: white;
     justify-content: center;
     padding-right: 100px;
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
 }
 .heroBtns {
     display: flex;
