@@ -45,7 +45,22 @@ padding-left: 10px;
   opacity: 0.6;
 }
 
-
+@media (max-width: 768px) {
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+  }
+  .effectZoe {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1 / 1;
+  };
+  
+}
 
 
 
