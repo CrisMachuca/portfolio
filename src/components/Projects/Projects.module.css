@@ -3,12 +3,13 @@
 
 .galleryContainer {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px; /* Espacio entre los elementos */
+  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+  gap: 20px; 
   padding: 20px;
   justify-content: center;
   
 }
+  
 .container {
     padding: 76px 12em;
     color: var(--color-text);

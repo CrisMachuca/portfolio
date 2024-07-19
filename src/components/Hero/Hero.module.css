@@ -183,6 +183,7 @@
     .pointer {
         color: rgb(255, 9, 222);
         font-size: 50px;
+
     }
     .aboutItems {
         color: white;
@@ -243,6 +244,7 @@
 
 .front {
     color: rgb(255, 9, 222);
+
 }
 
 .front:hover, :focus {       

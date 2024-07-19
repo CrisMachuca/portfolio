@@ -1,157 +1,51 @@
-/*
-
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    width: 100%;
-    max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 20px;
 }
 
-.galleryItem {
-    position: relative;
-    overflow: hidden;
-    background: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px #8D59F7;
-    padding-bottom: 150px;
-    /*-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);*/
-/*} 
-/*
-.galleryItem img {
-    width: 100%;
-    height: 100%;
-    object-fit:cover;
-    border-radius: 10px;
-    transition: transform 0.5s ease;
+.underImage h2 {
+padding-left: 10px;
+color: #868687;
+text-transform: uppercase;
 }
 
-.galleryItem:hover img {
-    transform: scale(1.1);
+.underImage .description {
+color: white;
+font-size: 2.5em;
+padding-left: 10px;
 }
-
-.title {
-    padding: 10px;
-}
-
-.caption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px;
-    background: #8D59F7;
-    color: #fff;
-    text-align: center;
-    font-size: 1rem;
-    box-sizing: border-box;
-    transition: transform 0.5s ease;
-}
-
-.galleryItem:hover .caption {
-    transform: translateY(0);
-}
-
-
-
 
 /* efecto zoe */
+.effectZoe {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  height: 550px;
+  width: 550px;
+  border-radius: 10px;
+}
+
+.effectZoe img {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  z-index: 1;
+}
+
+.effectZoe:hover img {
+  transform: scale(1.1);
+  opacity: 0.6;
+}
 
 
-  
-  .effectZoe {
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-  }
-  
-  .effectZoe img {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    object-fit:cover;
-    border-radius: 10px;
-    transition: opacity 0.35s;
-  }
-  
-  .effectZoe figcaption {
-    padding: 4em;
-    color: #fff;
-    text-align: center;
-    text-transform: uppercase;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .effectZoe figcaption::before {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: block;
-    content: '';
-    
-  }
-  
-  .effectZoe h2 {
-    position: relative;
-    margin: 0;
-    font-size: 1.4em;
-    font-weight: 800;
-    line-height: 1.1;
-    opacity: 0;
-    transform: translate3d(0, 100%, 0);
-    transition: opacity 0.35s, transform 0.35s;
-  }
-  
-  .effectZoe .iconLinks {
-    position: relative;
-    margin-top: 1em;
-    opacity: 0;
-    transition: opacity 0.35s, transform 0.35s;
-  }
-  
-  .effectZoe .iconLinks a {
-    margin: 0 0.3em;
-    padding: 0.5em;
-    background: #fff;
-    color: #333;
-  }
-  
-  .effectZoe .description {
-    position: relative;
-    margin-top: 1em;
-    opacity: 0;
-    transform: translate3d(0, 100%, 0);
-    transition: opacity 0.35s, transform 0.35s;
-  }
-  
-  .effectZoe:hover img {
-    opacity: 0.4;
-  }
-  
-  .effectZoe:hover figcaption::before {
-    background: rgba(43, 43, 43, 0.85);
-  }
-  
-  .effectZoe:hover .iconLinks,
-  .effectZoe:hover .description {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
 
-  .effectZoe:hover h2 {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
+
+
