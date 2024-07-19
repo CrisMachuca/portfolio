@@ -1,24 +1,58 @@
 @import "../../vars.css";
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 
 
 .projectDetail {
     padding: 20px;
     text-align: center;
+    background-color: #0F141C;
+    
   }
   
   .projectDetail img {
     width: 100%;
-    max-width: 600px;
+    max-width: 1200px;
     height: auto;
     margin: 20px 0;
+    border-radius: 25px;
   }
   
   .projectDetail h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
+    color: white;
+    text-transform: uppercase;
   }
   
   .projectDetail p {
     font-size: 1.2em;
     color: #666;
+  }
+  
+  .projectDetail h2 {
+    font-size: 5rem;
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    
+    animation: colorChange 5s infinite;
+  }
+
+  @keyframes colorChange {
+    0% {
+      color: #8D59F7;
+    }
+    25% {
+      color: #00ff00; /* Green */
+    }
+    50% {
+      color: #0000ff; /* Blue */
+    }
+    75% {
+      color: #ffff00; /* Yellow */
+    }
+    100% {
+      color: #ff0000; /* Red */
+    }
   }
