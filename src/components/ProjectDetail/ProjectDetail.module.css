@@ -3,7 +3,7 @@
 
 
 .projectDetail {
-    padding: 20px;
+    padding: 20px 4em;
     text-align: center;
     background-color: #0F141C;
     
@@ -44,15 +44,56 @@
       color: #8D59F7;
     }
     25% {
-      color: #00ff00; /* Green */
+      color: #ffa600; 
     }
     50% {
-      color: #0000ff; /* Blue */
+      color: #ffee00; 
     }
     75% {
-      color: #ffff00; /* Yellow */
+      color: #ff008c; 
     }
     100% {
-      color: #ff0000; /* Red */
+      color: #ff00d4; 
     }
+  }
+
+  .mainTextContainer {
+    display: grid;
+    grid-template-columns: 50% 30%;
+    gap: 30px;
+    justify-content: center;
+    
+    padding: 20px 4em;
+  
+    color: white;
+  }
+
+  .left {
+    color: white;
+    margin: 30px;
+    padding: 1em;
+  }
+
+  .left p {
+    text-align: justify;
+  }
+  .details, .banner {
+    background-color: #171B22;
+    color: white;
+    margin: 30px;
+    border-radius: 25px;
+    padding: 2em;
+  }
+
+  .details ul li {
+    color: #FF7D61;
+    text-align: left;
+  }
+
+  @media (max-width: 990px) {
+    .mainTextContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        
+      }
   }
