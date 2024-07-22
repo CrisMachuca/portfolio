@@ -4,6 +4,7 @@ import projects from '../../data/projects.json';
 import styles from './ProjectDetail.module.css';
 import { getImageUrl } from '../../utils';
 import NavbarHero from '../Navbar/NavbarHero';
+import { FaPhoneVolume } from 'react-icons/fa';
 
 export const ProjectDetail = () => {
   const { id } = useParams();
@@ -17,35 +18,75 @@ export const ProjectDetail = () => {
     <>
     <NavbarHero />
       <div className={styles.projectDetail}>
-        <h1>{project.title}</h1>
+        <h1 className={styles.title}>{project.title}</h1>
         <h2>Project Details</h2>
         <p>{project.description}</p>
         <img src={getImageUrl(project.imageSrc)} alt={project.title} />
         <div className={styles.mainTextContainer}>
           <div className={styles.left}>
-            <div className={styles.block1}>
-            <h1>Delivering Better Business News With an Improved User Experience.</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis numquam ex saepe nesciunt iusto, in tempora pariatur delectus atque quibusdam, ad aperiam qui ea fugiat repellat voluptatum voluptatibus quos totam? Eius, molestiae qui maxime accusantium odit consequuntur voluptatem quas harum, ea quasi ullam voluptatibus corrupti! Quae quod magnam laborum quaerat temporibus, nulla animi suscipit consequuntur exercitationem iure expedita nam iste consectetur saepe necessitatibus nemo, voluptatum recusandae dolores quibusdam ea impedit?</p>
+            <div className={styles.block}>
+              <h1>Website Functionality</h1>
+              <ul>
+                      {project.functionality.map(functionality => (
+                        <li key={functionality}>{functionality}</li>
+                      ))}
+              </ul>
+              
             </div>
-            <div className={styles.block2}>
-            <h1>Overview</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis numquam ex saepe nesciunt iusto, in tempora pariatur delectus atque quibusdam, ad aperiam qui ea fugiat repellat voluptatum voluptatibus quos totam? Eius, molestiae qui maxime accusantium odit consequuntur voluptatem quas harum, ea quasi ullam voluptatibus corrupti! Quae quod magnam laborum quaerat temporibus, nulla animi suscipit consequuntur exercitationem iure expedita nam iste consectetur saepe necessitatibus nemo, voluptatum recusandae dolores quibusdam ea impedit?</p>
+            <div className={styles.block}>
+              <h1>Technologies Used</h1>
+              <ul>
+                      {project.technologies.map(technologies => (
+                        <li key={technologies}>{technologies}</li>
+                      ))}
+              </ul>
             </div>
+            <div className={styles.block}>
+              <h1>Website Purpose</h1>
+              <p>{project.purpose}</p>
+            </div>
+
+            {project.extraImg && (
+              <div className={styles.extraImg}>
+                {project.extraImg.map((extraImg, index) => (
+                  <img key={index} src={getImageUrl(extraImg)} alt={`Extra ${index}`} />
+                ))}
+              </div>
+            )}
           </div>
           <div className={styles.right}>
             <div className={styles.details}>
               <h1>Project Details</h1>
               <ul>
-                <li>Name</li>
-                <li>skills</li>
-                <li>Date</li>
-                
+                <li className={styles.border}>
+                  <h3 className={styles.leftList}>Name:</h3>
+                  <li>{project.title}</li>
+                </li>
+                <li className={styles.border}>
+                  <h3 className={styles.leftList}>Skills:</h3>
+                  
+                  <ul>
+                      {project.skills.map(skill => (
+                        <li key={skill}>{skill}</li>
+                      ))}
+                  </ul>
+                    
+                  
+                </li>
+                <li className={styles.border}>
+                  <h3 className={styles.leftList}>Category</h3>
+                  <li>{project.category}</li>
+                </li>
+                <li className={styles.border}>
+                  <h3 className={styles.leftList}>Date:</h3>
+                  <li>{project.date}</li>
+                </li>
               </ul>
             </div>
             <div className={styles.banner}>
-              <img src="" alt="" />
-              <p>hola hola</p>
-              <button>llamame</button>
+              <FaPhoneVolume className={styles.phone}/>
+              <h3>Looking for a Full Stack Developer? That could be me.</h3>
+              <button>+(34) 660 80 06 31</button>
             </div>
           </div>
         </div>

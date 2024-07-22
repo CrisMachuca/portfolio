@@ -17,16 +17,22 @@
     border-radius: 25px;
   }
   
-  .projectDetail h1 {
+  .title {
     font-size: 2.5em;
     margin-bottom: 20px;
     color: white;
     text-transform: uppercase;
   }
-  
+
+  .mainTextContainer h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: white;
+    margin-left: 0;
+  }
   .projectDetail p {
-    font-size: 1.2em;
-    color: #666;
+    font-size: 1.5em;
+    color: #ffffff;
   }
   
   .projectDetail h2 {
@@ -44,13 +50,13 @@
       color: #8D59F7;
     }
     25% {
-      color: #ffa600; 
+      color: #fa00af; 
     }
     50% {
-      color: #ffee00; 
+      color: #af03af; 
     }
     75% {
-      color: #ff008c; 
+      color: #b913e2; 
     }
     100% {
       color: #ff00d4; 
@@ -60,11 +66,9 @@
   .mainTextContainer {
     display: grid;
     grid-template-columns: 50% 30%;
-    gap: 30px;
+    gap: 10px;
     justify-content: center;
-    
     padding: 20px 4em;
-  
     color: white;
   }
 
@@ -75,7 +79,10 @@
   }
 
   .left p {
-    text-align: justify;
+    text-align: left;
+  }
+  .left h1 {
+    text-align: left;
   }
   .details, .banner {
     background-color: #171B22;
@@ -85,9 +92,63 @@
     padding: 2em;
   }
 
+  .border {
+    border-bottom: 0.5px solid grey;
+    padding-top: 1em;
+  }
+
   .details ul li {
-    color: #FF7D61;
+    color: #ff00d4;
     text-align: left;
+    padding-bottom: 10px;
+    
+  }
+
+  .details ul li li {
+    color: #FFF;
+    text-align: left;
+    font-size: 1.3em;
+  }
+
+  .details ul li ul {
+    padding-left: 0;
+  }
+  .block ul li {
+    color: #666;
+    font-size: 1.2em;
+    text-align: left;
+    list-style: disc ;
+  }
+
+  .leftList {
+    font-size: 1em;
+  }
+
+  .extraImg {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+  }
+
+  .phone {
+    background-color: #ff00d4;
+    font-size: 5em;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+  }
+
+  h3 {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+
+  .banner button {
+    background-color: #FFDB59;
+    padding: 8px;
+    font-size: 2em;
+    border-style: none;
+    border-radius: 20px;
   }
 
   @media (max-width: 990px) {
