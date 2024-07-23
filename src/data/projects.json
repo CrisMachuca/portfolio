@@ -8,7 +8,10 @@
       "skills": ["React", "Express", "Node"],
       "demo": "https://www.example.com",
       "source": "https://www.github.com",
-      "date": "Current"
+      "date": "Current",
+      "functionality": ["Photo & Film Locations: Provides detailed information and images of various filming locations across southern Europe.", "Production Services: Offers comprehensive production services including location scouting, crew booking, production support, and filming advice.", "Contact & Inquiry Forms: Easy-to-use contact forms for inquiries and service requests.", "Multilingual Support: Available in both English and French."],
+      "technologies": ["Web Development: HTML, CSS, JavaScript", "Frameworks/Libraries: Likely includes jQuery and other JavaScript libraries for interactive elements.", "CMS: Potential use of a content management system for easy content updates.", "Responsive Design: Ensures usability across various devices."],
+      "purpose": "Propaganda Film is dedicated to providing top-tier production services for film, TV, and photography. With over 25 years of industry experience, they offer expert location scouting, production support, and crew management to ensure seamless and professional filming experiences."
     },
     {
       "id": 2,
@@ -19,7 +22,10 @@
       "skills": ["React", "Express", "Node"],
       "demo": "https://www.example.com",
       "source": "https://www.github.com",
-      "date": "June 2024"
+      "date": "June 2024",
+      "functionality": ["Photo & Film Locations: Provides detailed information and images of various filming locations across southern Europe.", "Production Services: Offers comprehensive production services including location scouting, crew booking, production support, and filming advice.", "Contact & Inquiry Forms: Easy-to-use contact forms for inquiries and service requests.", "Multilingual Support: Available in both English and French."],
+      "technologies": ["Web Development: HTML, CSS, JavaScript", "Frameworks/Libraries: Likely includes jQuery and other JavaScript libraries for interactive elements.", "CMS: Potential use of a content management system for easy content updates.", "Responsive Design: Ensures usability across various devices."],
+      "purpose": "Propaganda Film is dedicated to providing top-tier production services for film, TV, and photography. With over 25 years of industry experience, they offer expert location scouting, production support, and crew management to ensure seamless and professional filming experiences."
     },
     {
       "id": 3,
@@ -45,7 +51,10 @@
       "skills": ["React", "Express", "Node"],
       "demo": "https://www.example.com",
       "source": "https://www.github.com",
-      "date": "March 2024"
+      "date": "March 2024",
+      "functionality": ["Photo & Film Locations: Provides detailed information and images of various filming locations across southern Europe.", "Production Services: Offers comprehensive production services including location scouting, crew booking, production support, and filming advice.", "Contact & Inquiry Forms: Easy-to-use contact forms for inquiries and service requests.", "Multilingual Support: Available in both English and French."],
+      "technologies": ["Web Development: HTML, CSS, JavaScript", "Frameworks/Libraries: Likely includes jQuery and other JavaScript libraries for interactive elements.", "CMS: Potential use of a content management system for easy content updates.", "Responsive Design: Ensures usability across various devices."],
+      "purpose": "Propaganda Film is dedicated to providing top-tier production services for film, TV, and photography. With over 25 years of industry experience, they offer expert location scouting, production support, and crew management to ensure seamless and professional filming experiences."
     },
     {
       "id": 5,
@@ -56,7 +65,10 @@
       "skills": ["React", "Express", "Node"],
       "demo": "https://www.example.com",
       "source": "https://www.github.com",
-      "Date": "April 2024"
+      "Date": "April 2024",
+      "functionality": ["Photo & Film Locations: Provides detailed information and images of various filming locations across southern Europe.", "Production Services: Offers comprehensive production services including location scouting, crew booking, production support, and filming advice.", "Contact & Inquiry Forms: Easy-to-use contact forms for inquiries and service requests.", "Multilingual Support: Available in both English and French."],
+      "technologies": ["Web Development: HTML, CSS, JavaScript", "Frameworks/Libraries: Likely includes jQuery and other JavaScript libraries for interactive elements.", "CMS: Potential use of a content management system for easy content updates.", "Responsive Design: Ensures usability across various devices."],
+      "purpose": "Propaganda Film is dedicated to providing top-tier production services for film, TV, and photography. With over 25 years of industry experience, they offer expert location scouting, production support, and crew management to ensure seamless and professional filming experiences."
     },
     {
       "id": 6,
@@ -67,7 +79,10 @@
       "skills": ["React", "Express", "Node"],
       "demo": "https://www.example.com",
       "source": "https://www.github.com",
-      "date": "March 2024"
+      "date": "March 2024",
+      "functionality": ["Photo & Film Locations: Provides detailed information and images of various filming locations across southern Europe.", "Production Services: Offers comprehensive production services including location scouting, crew booking, production support, and filming advice.", "Contact & Inquiry Forms: Easy-to-use contact forms for inquiries and service requests.", "Multilingual Support: Available in both English and French."],
+      "technologies": ["Web Development: HTML, CSS, JavaScript", "Frameworks/Libraries: Likely includes jQuery and other JavaScript libraries for interactive elements.", "CMS: Potential use of a content management system for easy content updates.", "Responsive Design: Ensures usability across various devices."],
+      "purpose": "Propaganda Film is dedicated to providing top-tier production services for film, TV, and photography. With over 25 years of industry experience, they offer expert location scouting, production support, and crew management to ensure seamless and professional filming experiences."
     },
     {
       "id": 7,
@@ -78,7 +93,10 @@
       "skills": ["React", "Express", "Node"],
       "demo": "https://www.example.com",
       "source": "https://www.github.com",
-      "date": "April 2024"
+      "date": "April 2024",
+      "functionality": ["Photo & Film Locations: Provides detailed information and images of various filming locations across southern Europe.", "Production Services: Offers comprehensive production services including location scouting, crew booking, production support, and filming advice.", "Contact & Inquiry Forms: Easy-to-use contact forms for inquiries and service requests.", "Multilingual Support: Available in both English and French."],
+      "technologies": ["Web Development: HTML, CSS, JavaScript", "Frameworks/Libraries: Likely includes jQuery and other JavaScript libraries for interactive elements.", "CMS: Potential use of a content management system for easy content updates.", "Responsive Design: Ensures usability across various devices."],
+      "purpose": "Propaganda Film is dedicated to providing top-tier production services for film, TV, and photography. With over 25 years of industry experience, they offer expert location scouting, production support, and crew management to ensure seamless and professional filming experiences."
     },
     {
       "id": 8,
@@ -89,6 +107,9 @@
       "skills": ["React", "Express", "Node"],
       "demo": "https://www.example.com",
       "source": "https://www.github.com",
-      "date": "March 2024"
+      "date": "March 2024",
+      "functionality": ["Photo & Film Locations: Provides detailed information and images of various filming locations across southern Europe.", "Production Services: Offers comprehensive production services including location scouting, crew booking, production support, and filming advice.", "Contact & Inquiry Forms: Easy-to-use contact forms for inquiries and service requests.", "Multilingual Support: Available in both English and French."],
+      "technologies": ["Web Development: HTML, CSS, JavaScript", "Frameworks/Libraries: Likely includes jQuery and other JavaScript libraries for interactive elements.", "CMS: Potential use of a content management system for easy content updates.", "Responsive Design: Ensures usability across various devices."],
+      "purpose": "Propaganda Film is dedicated to providing top-tier production services for film, TV, and photography. With over 25 years of industry experience, they offer expert location scouting, production support, and crew management to ensure seamless and professional filming experiences."
     }
   ]

@@ -171,24 +171,30 @@
     filter: blur(100px);
     
 }
-    
-    .services {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        background-color: transparent;
-    }
+
+.services {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+}
 
     .pointer {
         color: rgb(255, 9, 222);
-        font-size: 50px;
-
+        font-size: 4em;
+        padding-right: 6px;
+    }
+    .server {
+        color: #5FBCFF;
+        font-size: 4em;
+        padding: 6px;
     }
     .aboutItems {
         color: white;
         display: flex;
         flex-direction: row;
+        justify-content: center;
         gap: 50px;
         padding-bottom: 1em;
         flex-wrap: wrap;
@@ -200,7 +206,7 @@
         align-items: center;
         border-radius: 20px;
         list-style: none;
-        padding: 25px;
+        padding: 25px 0;
         
     }
     
@@ -238,9 +244,7 @@
     }
         }
     
-    .aboutItem p {
-        font-size: 25px;
-    }
+    
 
 .front {
     color: rgb(255, 9, 222);
@@ -259,7 +263,6 @@
 .back:hover, :focus {       
     cursor: pointer;
     text-shadow: 0 0 5px #5FBCFF, 0 0 10px #5FBCFF, 0 0 20px #5FBCFF;
-    
   }
 
 
@@ -296,29 +299,7 @@
     .social {
         font-size: 30px;
     }
-    .pointer {
-        font-size: 30px;
-    }
-    .aboutItem h3 {
-        font-size: 25px;
-    }
-    .aboutItem p {
-        font-size: 18px;
-    }
+    
 }
 
 
-
-/*
-@media screen and (max-width: 830px) {
-    .container {
-        flex-direction: column-reverse;
-    }
-    .content {
-        align-items: center;
-    }
-    .heroImg {
-        display: none;
-    }
-}
-*/

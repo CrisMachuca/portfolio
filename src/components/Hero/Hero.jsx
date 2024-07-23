@@ -2,7 +2,7 @@ import React from 'react';
 import { FaHeart, FaFacebook, FaGithub, FaLinkedin, FaDownload } from "react-icons/fa";
 import styles from "./Hero.module.css";
 import { getImageUrl } from '../../utils';
-import { FaArrowPointer } from 'react-icons/fa6';
+import { FaArrowPointer, FaServer } from 'react-icons/fa6';
 import NavbarHero from '../Navbar/NavbarHero';
 
 export const Hero = () => {
@@ -24,7 +24,7 @@ export const Hero = () => {
                     </div>
                 </li>
                 <li className={styles.aboutItem}>
-                    <img src={getImageUrl("about/serverIcon.png")} alt="Server icon" />
+                    <FaServer className={styles.server}/>
                     <div className={styles.aboutItemText}>
                         <h3 className={styles.back}>Backend Developer</h3>
                     </div>
@@ -40,7 +40,7 @@ export const Hero = () => {
           </div>
       </div>
       <img 
-          src={getImageUrl("hero/profilecrop.png")} alt="Hero image of me" className={styles.heroImg}/>
+          src={getImageUrl("hero/heroImage5.png")} alt="Hero image of me" className={styles.heroImg}/>
       <div className={styles.topBlur}></div>
       <div className={styles.bottomBlur}></div>
       
