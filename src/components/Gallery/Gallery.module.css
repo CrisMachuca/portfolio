@@ -61,9 +61,9 @@
   color: white;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
-  padding-left: 1em;
+  padding-left: 0.5em;
   opacity: 0;
   transition: opacity 0.3s ease, transform 0.3s ease;
   border-radius: 10px;
@@ -97,7 +97,7 @@
   
 }
 .effectZoe:hover .hoverOverlay .arrow {
-  transform: translate(36px, 0px);
+  transform: translate(15px, 0px);
 }
 
 @media (max-width: 768px) {
