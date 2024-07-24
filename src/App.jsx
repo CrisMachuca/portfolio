@@ -10,10 +10,12 @@ import Navbar from './components/Navbar/Navbar';
 import { Projects } from './components/Projects/Projects';
 import { SoftSkills } from './components/SoftSkills/SoftSkills';
 import { ProjectDetail } from './components/ProjectDetail/ProjectDetail';
+import ScrollToTop from './components/ScrollToTop/ScrollToTp';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className={styles.App}>
         <Navbar />
         <Routes>
