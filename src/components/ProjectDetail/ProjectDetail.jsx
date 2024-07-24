@@ -4,7 +4,7 @@ import projects from '../../data/projects.json';
 import styles from './ProjectDetail.module.css';
 import { getImageUrl } from '../../utils';
 import NavbarHero from '../Navbar/NavbarHero';
-import { FaPhoneVolume } from 'react-icons/fa';
+import { FaCode, FaEye, FaGlobe, FaPhoneVolume } from 'react-icons/fa';
 
 export const ProjectDetail = () => {
   const { id } = useParams();
@@ -25,9 +25,13 @@ export const ProjectDetail = () => {
         <h1 className={styles.title}>{project.title}</h1>
         <h2>Project Details</h2>
         <p>{project.description}</p>
-        <img src={getImageUrl(project.imageSrc)} alt={project.title} />
+        <img src={getImageUrl(project.imageSrc)} className={styles.mainImg} alt={project.title} />
         <div className={styles.mainTextContainer}>
           <div className={styles.left}>
+            <div className={styles.block1}>
+                <a href={project.demo}><FaGlobe /> View site on Live!</a>
+                <a href={project.source}><FaCode /> The code</a>
+              </div>
             <div className={styles.block}>
               <h1>Website Functionality</h1>
               <ul>
