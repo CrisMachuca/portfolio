@@ -4,6 +4,7 @@ import styles from "./Hero.module.css";
 import { getImageUrl } from '../../utils';
 import { FaArrowPointer, FaServer } from 'react-icons/fa6';
 import NavbarHero from '../Navbar/NavbarHero';
+import WithVisibility from '../WithVisibility/WithVisibility';
 
 export const Hero = () => {
   return (
@@ -39,8 +40,10 @@ export const Hero = () => {
             <a href=""><FaGithub className={styles.social}/></a>
           </div>
       </div>
+      
       <img 
           src={getImageUrl("hero/heroImage5.png")} alt="Hero image of me" className={styles.heroImg}/>
+      
       <div className={styles.topBlur}></div>
       <div className={styles.bottomBlur}></div>
       

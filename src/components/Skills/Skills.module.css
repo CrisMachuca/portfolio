@@ -4,15 +4,18 @@
     color: var(--color-text);
     padding: 3em 2em;
     background-color: #050709;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .title {
     font-size: 60px;
     text-align: center;
     font-weight: 900;
-    margin-bottom: 33px;
+    margin-bottom: 1em;
     font-family: var(--font-roboto);
+    display: inline-block;
     /*background: linear-gradient(
         90deg, 
         #8D59F7 20%,
@@ -21,7 +24,7 @@
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;*/
     color: white;
-    
+    border-bottom: 8px solid #8D59F7;
    
 }
 

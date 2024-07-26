@@ -59,7 +59,7 @@ const Navbar = () => {
             <a onClick={() => handleNavClick('resume')}>Resume</a>
           </li>
           <li>
-            <a onClick={() => handleNavClick('experience')}>Experience</a>
+            <a onClick={() => handleNavClick('resume')}>Experience</a>
           </li>
           <li>
             <a onClick={() => handleNavClick('skills')}>Skills</a>

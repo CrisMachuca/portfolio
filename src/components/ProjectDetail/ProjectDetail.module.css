@@ -6,34 +6,60 @@
     padding: 2em auto;
     text-align: center;
     background-color: #0F141C;
+    background-image: url(../../../assets/projectDetail/hexagon.jpg);
+    background-size:100% 30%; /* Ajusta la imagen para cubrir todo el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: top; /* Centra la imagen */
+    
     
   }
   
-  .projectDetail img {
+  .mainImg {
     width: 100%;
     max-width: 1200px;
-    height: auto;
+    height: 70vh;
     margin: 20px 0;
-    
     background-color: #fff;
-    border-radius: 25px;
-    
+    border-radius: 25px; 
+    transform: rotate3d(.5, -.866, 0, 15deg) rotate(1deg);
+    transition: transform 0.5s ease-in-out;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+/*
+  .mainImg {
+    border: 2px solid transparent; 
+            box-shadow: 0 0 3px rgba(132, 0, 255, 0.5), 
+                        0 0 6px rgba(132, 0, 255, 0.5), 
+                        0 0 9px rgba(132, 0, 255, 0.5), 
+                        0 0 12px rgba(132, 0, 255, 0.5), 
+                        0 0 15px rgba(132, 0, 255, 0.5), 
+                        0 0 18px rgba(132, 0, 255, 0.5); 
+            padding: 1px; 
+  }
+  */
+  .mainImg:hover {
+    transform: rotate3d(0, 0, 0, 0) rotate(0);
   }
 
-  .mainImg {
-    border: 2px solid transparent; /* Borde transparente para empezar */
-            box-shadow: 0 0 3px rgba(132, 0, 255, 0.5), /* Primer halo de neón */
-                        0 0 6px rgba(132, 0, 255, 0.5), /* Segundo halo de neón */
-                        0 0 9px rgba(132, 0, 255, 0.5), /* Tercer halo de neón */
-                        0 0 12px rgba(132, 0, 255, 0.5), /* Cuarto halo de neón */
-                        0 0 15px rgba(132, 0, 255, 0.5), /* Quinto halo de neón */
-                        0 0 18px rgba(132, 0, 255, 0.5); /* Sexto halo de neón */
-            padding: 1px; /* Espacio entre la imagen y el borde neón */
+  .block4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    align-items: center;
   }
-  
+
+  .extraImg {
+    
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 25px;
+
+  }
+
   .title {
     font-size: 2.5em;
-    padding-top: 20px;
+    padding-top: 2em;
     margin-bottom: 20px;
     color: white;
     text-transform: uppercase;
@@ -48,6 +74,8 @@
   .projectDetail p {
     font-size: 1.5em;
     color: #ffffff;
+    padding-bottom: 2em;
+    padding-top: 1em;
   }
   
   .projectDetail h2 {
@@ -62,19 +90,19 @@
 
   @keyframes colorChange {
     0% {
-      color: #8D59F7;
+      color: #a47af8;
     }
     25% {
-      color: #fa00af; 
+      color: #f76ece; 
     }
     50% {
-      color: #af03af; 
+      color: #e4dd7f; 
     }
     75% {
-      color: #b913e2; 
+      color: #79eb91; 
     }
     100% {
-      color: #ff00d4; 
+      color: #f3a667; 
     }
   }
 
@@ -155,15 +183,18 @@
     list-style: disc ;
   }
 
+  .block p {
+    color: #666;
+    font-size: 1.2em;
+    text-align: left;
+    list-style: disc ;
+  }
+
   .leftList {
     font-size: 1em;
   }
 
-  .extraImg {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 20px;
-  }
+ 
 
   .phone {
     background-color: #8D59F7;

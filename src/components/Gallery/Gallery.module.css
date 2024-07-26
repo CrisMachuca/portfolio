@@ -52,7 +52,7 @@
 /* hover overlay */
 .hoverOverlay {
   position: absolute;
-  bottom: 0;
+  top: 10px;
   left: 0;
   right: 0;
   height: 20%;

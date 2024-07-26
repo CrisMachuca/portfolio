@@ -10,7 +10,8 @@ import Navbar from './components/Navbar/Navbar';
 import { Projects } from './components/Projects/Projects';
 import { SoftSkills } from './components/SoftSkills/SoftSkills';
 import { ProjectDetail } from './components/ProjectDetail/ProjectDetail';
-import ScrollToTop from './components/ScrollToTop/ScrollToTp';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
+import WithVisibility from './components/WithVisibility/WithVisibility';
 
 function App() {
   return (
@@ -29,13 +30,13 @@ function App() {
 
 const Home = () => (
   <>
-    <Hero />
-    <SoftSkills />
+    <WithVisibility><Hero /></WithVisibility>
+    <WithVisibility><SoftSkills /></WithVisibility>
     <About />
-    <Skills />
-    <Projects />
-    <Resume />
-    <Contact />
+    <WithVisibility><Skills /></WithVisibility>
+    <WithVisibility><Projects /></WithVisibility>
+    <WithVisibility><Resume /></WithVisibility>
+    <WithVisibility><Contact /></WithVisibility>
   </>
 );
 

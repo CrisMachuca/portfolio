@@ -5,6 +5,7 @@ import styles from './ProjectDetail.module.css';
 import { getImageUrl } from '../../utils';
 import NavbarHero from '../Navbar/NavbarHero';
 import { FaCode, FaEye, FaGlobe, FaPhoneVolume } from 'react-icons/fa';
+import WithVisibility from '../WithVisibility/WithVisibility';
 
 export const ProjectDetail = () => {
   const { id } = useParams();
@@ -25,7 +26,9 @@ export const ProjectDetail = () => {
         <h1 className={styles.title}>{project.title}</h1>
         <h2>Project Details</h2>
         <p>{project.description}</p>
+        <WithVisibility animationClass="fromLeft">
         <img src={getImageUrl(project.imageSrc)} className={styles.mainImg} alt={project.title} />
+        </WithVisibility>
         <div className={styles.mainTextContainer}>
           <div className={styles.left}>
             <div className={styles.block1}>
@@ -54,9 +57,9 @@ export const ProjectDetail = () => {
             </div>
 
             {project.extraImg && (
-              <div className={styles.extraImg}>
+              <div className={styles.block4}>
                 {project.extraImg.map((extraImg, index) => (
-                  <img key={index} src={getImageUrl(extraImg)} alt={`Extra ${index}`} />
+                  <img key={index} src={getImageUrl(extraImg)} className={styles.extraImg} alt={`Extra ${index}`} />
                 ))}
               </div>
             )}
