@@ -27,14 +27,17 @@ export const ProjectDetail = () => {
         <h2>Project Details</h2>
         <p>{project.description}</p>
         <WithVisibility animationClass="fromLeft">
-        <img src={getImageUrl(project.imageSrc)} className={styles.mainImg} alt={project.title} />
-        </WithVisibility>
-        <div className={styles.mainTextContainer}>
-          <div className={styles.left}>
+          <div className={styles.imgContainer}>
+            <img src={getImageUrl(project.imageSrc)} className={styles.mainImg} alt={project.title} />
             <div className={styles.block1}>
                 <a href={project.demo} target="_blank"><FaGlobe /> View site on Live!</a>
                 <a href={project.source} target="_blank"><FaCode /> The code</a>
               </div>
+          </div>
+        </WithVisibility>
+        <div className={styles.mainTextContainer}>
+          <div className={styles.left}>
+            
             <div className={styles.block}>
               <WithVisibility animationClass="fromBottom">
               <h1>Website Functionality</h1>
