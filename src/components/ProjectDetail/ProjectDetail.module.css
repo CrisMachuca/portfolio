@@ -24,19 +24,9 @@
     transform: rotate3d(.5, -.866, 0, 15deg) rotate(1deg);
     transition: transform 0.5s ease-in-out;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    margin: 5px;
   }
-/*
-  .mainImg {
-    border: 2px solid transparent; 
-            box-shadow: 0 0 3px rgba(132, 0, 255, 0.5), 
-                        0 0 6px rgba(132, 0, 255, 0.5), 
-                        0 0 9px rgba(132, 0, 255, 0.5), 
-                        0 0 12px rgba(132, 0, 255, 0.5), 
-                        0 0 15px rgba(132, 0, 255, 0.5), 
-                        0 0 18px rgba(132, 0, 255, 0.5); 
-            padding: 1px; 
-  }
-  */
+
   .mainImg:hover {
     transform: rotate3d(0, 0, 0, 0) rotate(0);
   }
@@ -215,6 +205,23 @@
     font-size: 2em;
     border-style: none;
     border-radius: 20px;
+  }
+  .banner button:hover {
+    background-color: #050505;
+    color: #FFDB59;
+    padding: 8px;
+    font-size: 2em;
+    border-style: none;
+    border-radius: 20px;
+    border: 2px solid #FFDB59;
+  }
+
+  .flag {
+    width: 25px;
+    height: auto;
+    margin: 0 auto;
+    margin-right: 5px;
+    
   }
 
   @media (max-width: 990px) {

@@ -12,7 +12,7 @@ export const ProjectDetail = () => {
   const project = projects.find(proj => proj.id === parseInt(id));
 
   useEffect(() => {
-    window.scrollTo(0, 0);  // Asegúrate de que la página se desplace hacia la parte superior
+    window.scrollTo(0, 0);  
   }, [id]);
 
   if (!project) {
@@ -32,28 +32,40 @@ export const ProjectDetail = () => {
         <div className={styles.mainTextContainer}>
           <div className={styles.left}>
             <div className={styles.block1}>
-                <a href={project.demo}><FaGlobe /> View site on Live!</a>
-                <a href={project.source}><FaCode /> The code</a>
+                <a href={project.demo} target="_blank"><FaGlobe /> View site on Live!</a>
+                <a href={project.source} target="_blank"><FaCode /> The code</a>
               </div>
             <div className={styles.block}>
+              <WithVisibility animationClass="fromBottom">
               <h1>Website Functionality</h1>
+              </WithVisibility>
               <ul>
                 {project.functionality.map(functionality => (
+                  <WithVisibility animationClass="fromBottom">
                   <li key={functionality}>{functionality}</li>
+                  </WithVisibility>
                 ))}
               </ul>
             </div>
             <div className={styles.block}>
+              <WithVisibility animationClass="fromBottom">
               <h1>Technologies Used</h1>
+              </WithVisibility>
               <ul>
                 {project.technologies.map(technologies => (
+                  <WithVisibility animationClass="fromBottom">
                   <li key={technologies}>{technologies}</li>
+                  </WithVisibility>
                 ))}
               </ul>
             </div>
             <div className={styles.block}>
+              <WithVisibility animationClass="fromBottom">
               <h1>Website Purpose</h1>
+              </WithVisibility>
+              <WithVisibility animationClass="fromBottom">
               <p>{project.purpose}</p>
+              </WithVisibility>
             </div>
 
             {project.extraImg && (
@@ -65,6 +77,7 @@ export const ProjectDetail = () => {
             )}
           </div>
           <div className={styles.right}>
+            <WithVisibility animationClass="fromRight">
             <div className={styles.details}>
               <h1>Project Details</h1>
               <ul>
@@ -90,11 +103,14 @@ export const ProjectDetail = () => {
                 </li>
               </ul>
             </div>
+            </WithVisibility>
+            <WithVisibility animationClass="fromRight">
             <div className={styles.banner}>
               <FaPhoneVolume className={styles.phone} />
               <h3>Looking for a Full Stack Developer? That could be me.</h3>
-              <button>+(34) 660 80 06 31</button>
+              <button><img className={styles.flag} src={getImageUrl("projectDetail/espana.png")} alt="Spain Flag" />+(34) 660 80 06 31</button>
             </div>
+            </WithVisibility>
           </div>
         </div>
       </div>
