@@ -62,7 +62,7 @@
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 20px;
     align-items: center;
-    background-color: white;
+    
   }
 
   .extraImg {
@@ -163,7 +163,7 @@
     color: #8D59F7;
     text-align: left;
     padding-bottom: 10px;
-    
+    font-size: 1.2em;
   }
 
   .details ul li li {
@@ -249,11 +249,11 @@
         
       }
       .mainImg {
-        transform: rotate3d(0, 0, 0, 0) rotate(0);
+        
         width: 95%;
         height: auto;
         margin: 1px;
-        aspect-ratio: 1 / 1;
+        object-fit: cover;
       }
       .block1 {
         flex-direction: column;
