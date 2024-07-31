@@ -7,21 +7,30 @@
     text-align: center;
     background-color: #0F141C;
     background-image: url(../../../assets/projectDetail/hexagon.jpg);
-    background-size:100% 30%; /* Ajusta la imagen para cubrir todo el contenedor */
+    background-size:100% 20%; /* Ajusta la imagen para cubrir todo el contenedor */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     background-position: top; /* Centra la imagen */
     
   }
   
-
+  .imgContainer {
+    background-color: transparent;
+    border-radius: 25px;
+    padding: 1em 2em;
+    max-width: fit-content;
+    margin: 0 auto;
+    
+  }
 
   .mainImg {
     width: 100%;
     max-width: 1200px;
     height: 70vh;
-    margin: 20px 0;
+   
     background-color: #fff;
-    border-radius: 25px; 
+    
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     padding: 1em;
     
@@ -33,9 +42,12 @@
     align-items: center;
     padding: 0.5em;
     margin-bottom: 1em;
+    background-color: #171B22;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
   }
 
-/* background-color: #FFDB59; */
 
   .block1 a {
     background-color: #89f541;
@@ -62,15 +74,27 @@
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 20px;
     align-items: center;
-    
+    width: 100%;
+    height: auto;
   }
 
   .extraImg {
     width: 100%;
-    max-width: 400px;
-    height: auto;
+    max-width: 500px;
+    max-height: 350px;
     border-radius: 25px;
+    object-fit: cover;
+    
+  }
 
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide img {
+    width: 100%;
+    height: auto;
   }
 
   .title {
@@ -210,23 +234,23 @@
 
   .banner button {
     background-color: #050505;
-    color: #FFDB59;
+    color: #89f541;
     padding: 8px;
     font-size: 2em;
     border-style: none;
     border-radius: 20px;
     border-style: none;
     border-radius: 20px;
-    border: 2px solid #FFDB59;
+    border: 2px solid #89f541;
   }
   .banner button:hover {
     background-color: #050505;
-    color: #FFDB59;
+    color: #89f541;
     padding: 8px;
     font-size: 2em;
     border-style: none;
     border-radius: 20px;
-    border: 2px solid #FFDB59;
+    border: 2px solid #89f541;
   }
 
   .flag {
