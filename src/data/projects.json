@@ -58,74 +58,102 @@
       "technologies": ["Web Development: HTML, CSS, JavaScript", "Frameworks/Libraries: Likely includes jQuery and other JavaScript libraries for interactive elements.", "CMS: Potential use of a content management system for easy content updates.", "Responsive Design: Ensures usability across various devices."],
       "purpose": "Propaganda Film is dedicated to providing top-tier production services for film, TV, and photography. With over 25 years of industry experience, they offer expert location scouting, production support, and crew management to ensure seamless and professional filming experiences."
     },
+    
     {
       "id": 4,
       "category": "personal project",
-      "title": "StarWars",
-      "imageSrc": "projects/starwars.png",
-      "description": "Personal proyect",
-      "skills": ["React", "Express", "Node"],
-      "demo": "https://www.example.com",
-      "source": "https://www.github.com",
-      "date": "March 2024",
-      "functionality": ["Photo & Film Locations: Provides detailed information and images of various filming locations across southern Europe.", "Production Services: Offers comprehensive production services including location scouting, crew booking, production support, and filming advice.", "Contact & Inquiry Forms: Easy-to-use contact forms for inquiries and service requests.", "Multilingual Support: Available in both English and French."],
-      "technologies": ["Web Development: HTML, CSS, JavaScript", "Frameworks/Libraries: Likely includes jQuery and other JavaScript libraries for interactive elements.", "CMS: Potential use of a content management system for easy content updates.", "Responsive Design: Ensures usability across various devices."],
-      "purpose": "Propaganda Film is dedicated to providing top-tier production services for film, TV, and photography. With over 25 years of industry experience, they offer expert location scouting, production support, and crew management to ensure seamless and professional filming experiences."
+      "title": "Hangman",
+      "imageSrc": "projects/ahorcado.png",
+      "extraImg": ["projects/hangman2.png"],
+      "description": "The popular game",
+      "skills": ["HTML", "CSS", "Bootstrap", "React"],
+      "demo": "https://crismachuca.github.io/ahorcado/",
+      "source": "https://github.com/CrisMachuca/ahorcado",
+      "date": "May 2024",
+      "functionality": [
+      "Random Word Generation: Generates random words for each game session.",
+      "Game Logic Handling: Manages the core logic of the Hangman game, including letter guessing and tracking the number of attempts.",
+      "User Interface: Provides a modern and attractive interface using Bootstrap.",
+      "Dark Mode: Includes a dark mode switch for an immersive gaming experience.",
+      "Responsive Design: Ensures the game is playable on various devices."
+      ],
+      "technologies": [
+      "Web Development: HTML, CSS, JavaScript",
+      "Frameworks/Libraries: React for building the user interface",
+      "Styling: Bootstrap for modern and responsive design",
+      "Dark Mode Implementation: Custom logic for toggling dark mode"
+      ],
+      "purpose": "The Hangman project is a personal endeavor to recreate the classic Hangman game using modern web technologies. It was developed as a part of my learning journey at 4Geeks Academy Spain. This project not only challenged me to implement game logic and user interface design but also allowed me to enhance my skills in React and Bootstrap. The goal was to create a fun, interactive, and visually appealing game that users can enjoy while showcasing my abilities in web development."
     },
     {
       "id": 5,
-      "category": "personal project",
-      "title": "Hangman",
-      "imageSrc": "projects/ahorcado.png",
-      "description": "A game",
-      "skills": ["React", "Express", "Node"],
-      "demo": "https://www.example.com",
-      "source": "https://www.github.com",
-      "Date": "April 2024",
-      "functionality": ["Photo & Film Locations: Provides detailed information and images of various filming locations across southern Europe.", "Production Services: Offers comprehensive production services including location scouting, crew booking, production support, and filming advice.", "Contact & Inquiry Forms: Easy-to-use contact forms for inquiries and service requests.", "Multilingual Support: Available in both English and French."],
-      "technologies": ["Web Development: HTML, CSS, JavaScript", "Frameworks/Libraries: Likely includes jQuery and other JavaScript libraries for interactive elements.", "CMS: Potential use of a content management system for easy content updates.", "Responsive Design: Ensures usability across various devices."],
-      "purpose": "Propaganda Film is dedicated to providing top-tier production services for film, TV, and photography. With over 25 years of industry experience, they offer expert location scouting, production support, and crew management to ensure seamless and professional filming experiences."
-    },
-    {
-      "id": 6,
       "category": "web aplication",
       "title": "Domain Generator",
       "imageSrc": "projects/domain.png",
       "description": "Web aplication",
-      "skills": ["React", "Express", "Node"],
-      "demo": "https://www.example.com",
-      "source": "https://www.github.com",
+      "skills": ["HTML", "CSS", "BootStrap", "Vanilla JS"],
+      "demo": "https://crismachuca.github.io/DOMAIN-GENERATOR/",
+      "source": "https://github.com/CrisMachuca/DOMAIN-GENERATOR",
       "date": "March 2024",
-      "functionality": ["Photo & Film Locations: Provides detailed information and images of various filming locations across southern Europe.", "Production Services: Offers comprehensive production services including location scouting, crew booking, production support, and filming advice.", "Contact & Inquiry Forms: Easy-to-use contact forms for inquiries and service requests.", "Multilingual Support: Available in both English and French."],
-      "technologies": ["Web Development: HTML, CSS, JavaScript", "Frameworks/Libraries: Likely includes jQuery and other JavaScript libraries for interactive elements.", "CMS: Potential use of a content management system for easy content updates.", "Responsive Design: Ensures usability across various devices."],
-      "purpose": "Propaganda Film is dedicated to providing top-tier production services for film, TV, and photography. With over 25 years of industry experience, they offer expert location scouting, production support, and crew management to ensure seamless and professional filming experiences."
+      "functionality": [
+      "Random Domain Generation: Generates random domain names based on user preferences.",
+      "Customization Options: Allows users to customize specific segments of their domain names for a personalized touch.",
+      "Comprehensive Suggestions: Provides a comprehensive list of all possible domain name combinations.",
+      "User-Friendly Interface: Intuitive controls for easy customization and exploration.",
+      "Responsive Design: Ensures usability across various devices and screen sizes."
+      ],
+      "technologies": [
+      "Web Development: HTML, CSS, JavaScript",
+      "Styling: Bootstrap for modern and responsive design",
+      "JavaScript Logic: Vanilla JS for dynamic functionality"
+      ],
+      "purpose": "The Domain Generator project is a dynamic tool designed to revolutionize the way users explore and create domain names. Developed as part of my learning journey at 4Geeks Academy España, this application blends HTML, Bootstrap, CSS, and JavaScript to offer a seamless and intuitive user experience. It empowers users to customize their domain names, providing endless possibilities and ensuring a perfect fit for their brand, project, or venture. This project highlights my ability to create practical and innovative web applications that meet real-world needs."
+    },
+    {
+      "id": 6,
+      "category": "personal project",
+      "title": "Rock Paper Scissors",
+      "imageSrc": "projects/rockpaper.png",
+      "description": "The addictive game",
+      "skills": ["HTML", "CSS", "BootStrap", "Vanilla JS"],
+      "demo": "https://crismachuca.github.io/ROCK-PAPER-SCISSORS/",
+      "source": "https://github.com/CrisMachuca/ROCK-PAPER-SCISSORS",
+      "date": "April 2024",
+      "functionality": [
+      "Game Mechanics: Implements the classic rock-paper-scissors game with interactive play.",
+      "Match Counter: Keeps track of the number of matches played.",
+      "End Game Pop-up: Displays a pop-up when the game ends.",
+      "Reset Button: Allows users to reset the game and start over.",
+      "User Interface: Provides a visually appealing and intuitive interface using Bootstrap."
+    ],
+      "technologies": [
+      "Web Development: HTML, CSS, JavaScript",
+      "Styling: Bootstrap for modern and responsive design"
+    ],
+      "purpose": "The Rock Paper Scissors project is a personal initiative to recreate the classic game with a modern and personal touch. Developed using HTML, CSS, JavaScript, and Bootstrap, this project features an interactive interface, a match counter, and end game notifications. It demonstrates my ability to create engaging and functional web applications, delivering a seamless user experience through client-side technologies and responsive design."
+
     },
     {
       "id": 7,
       "category": "personal project",
-      "title": "Rock Paper Scissors",
-      "imageSrc": "projects/rockpaper.png",
-      "description": "A game",
-      "skills": ["React", "Express", "Node"],
-      "demo": "https://www.example.com",
-      "source": "https://www.github.com",
-      "date": "April 2024",
-      "functionality": ["Photo & Film Locations: Provides detailed information and images of various filming locations across southern Europe.", "Production Services: Offers comprehensive production services including location scouting, crew booking, production support, and filming advice.", "Contact & Inquiry Forms: Easy-to-use contact forms for inquiries and service requests.", "Multilingual Support: Available in both English and French."],
-      "technologies": ["Web Development: HTML, CSS, JavaScript", "Frameworks/Libraries: Likely includes jQuery and other JavaScript libraries for interactive elements.", "CMS: Potential use of a content management system for easy content updates.", "Responsive Design: Ensures usability across various devices."],
-      "purpose": "Propaganda Film is dedicated to providing top-tier production services for film, TV, and photography. With over 25 years of industry experience, they offer expert location scouting, production support, and crew management to ensure seamless and professional filming experiences."
-    },
-    {
-      "id": 8,
-      "category": "personal project",
       "title": "Cards Generator",
       "imageSrc": "projects/cardsgenerator.png",
       "description": "A game",
-      "skills": ["React", "Express", "Node"],
-      "demo": "https://www.example.com",
-      "source": "https://www.github.com",
+      "skills": ["HTML", "CSS", "Vanilla JS"],
+      "demo": "https://crismachuca.github.io/RANDOM-CARDS-GENERATOR/",
+      "source": "https://github.com/CrisMachuca/RANDOM-CARDS-GENERATOR",
       "date": "March 2024",
-      "functionality": ["Photo & Film Locations: Provides detailed information and images of various filming locations across southern Europe.", "Production Services: Offers comprehensive production services including location scouting, crew booking, production support, and filming advice.", "Contact & Inquiry Forms: Easy-to-use contact forms for inquiries and service requests.", "Multilingual Support: Available in both English and French."],
-      "technologies": ["Web Development: HTML, CSS, JavaScript", "Frameworks/Libraries: Likely includes jQuery and other JavaScript libraries for interactive elements.", "CMS: Potential use of a content management system for easy content updates.", "Responsive Design: Ensures usability across various devices."],
-      "purpose": "Propaganda Film is dedicated to providing top-tier production services for film, TV, and photography. With over 25 years of industry experience, they offer expert location scouting, production support, and crew management to ensure seamless and professional filming experiences."
+      "functionality": [
+        "Random Card Generation: Generates a new random card each time the page is reloaded, every 5 seconds, or when the user clicks a button.",
+        "Multiple Card Generation: Allows users to generate multiple random cards at once.",
+        "Card Size Adjustment: Users can modify the width and height of the cards through input fields.",
+        "User Interface: Provides a visually appealing and intuitive interface using Bootstrap."
+      ],
+      "technologies": [
+        "Web Development: HTML, CSS, JavaScript",
+        "Styling: Bootstrap for modern and responsive design"
+      ],
+      "purpose": "The Cards Generator project is a personal initiative to create a dynamic and interactive random card generator. Developed using HTML, CSS, JavaScript, and Bootstrap, this project features multiple ways to generate random cards, including automatic intervals and user-initiated actions. It also allows for customization of card sizes, showcasing my ability to add complex functionalities and enhance user experience. This project demonstrates my problem-solving skills and my passion for learning and applying new programming concepts."
+    
     }
   ]

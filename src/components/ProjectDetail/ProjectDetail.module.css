@@ -81,7 +81,7 @@
   .extraImg {
     width: 100%;
     max-width: 500px;
-    max-height: 350px;
+    max-height: 500px;
     border-radius: 25px;
     object-fit: cover;
     
