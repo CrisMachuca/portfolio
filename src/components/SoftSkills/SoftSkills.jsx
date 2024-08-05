@@ -12,7 +12,7 @@ export const SoftSkills = () => {
       <div className={styles.softSkills}>
             {softskills.map((softskill, id) => {
                 return (
-                <WithVisibility animationClass="fromLeft">
+                <WithVisibility animationClass="fromTop">
                 <div key={id} className={styles.softSkill}>
                     <div className={styles.softSkillImageContainer}>
                         <img src={getImageUrl(softskill.imageSrc)} alt={softskill.title} /> 

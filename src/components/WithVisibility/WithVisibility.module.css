@@ -11,13 +11,22 @@
 
   /* Animaciones específicas */
 .fromTop {
-    transform: translateY(-20px);
+    transform: translateY(70px);
   }
   
   .fromTop.visible {
     transform: translateY(0);
   }
   
+  .fromTop2 {
+    transform: translateY(-90px);
+    transition: transform 0.9s ease-out;
+  }
+  
+  .fromTop2.visible {
+    transform: translateY(0);
+  }
+
   .fromLeft {
     transform: translateX(-200px);
     transition: transform 0.6s ease-out;
