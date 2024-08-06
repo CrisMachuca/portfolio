@@ -44,7 +44,7 @@
   top: 10px;
   left: 0;
   right: 0;
-  height: 20%;
+  height: 30%;
   background: rgb(93, 43, 150);
   background: linear-gradient(90deg, rgb(93, 43, 150) 0%, rgba(57,29,109,1) 100%);
   color: white;
@@ -53,6 +53,7 @@
   justify-content: space-around;
   align-items: center;
   padding-left: 0.5em;
+  padding-top: 0.5em;
   opacity: 0;
   transition: opacity 0.3s ease, transform 0.3s ease;
   border-radius: 10px;

@@ -12,15 +12,16 @@
 }
 
 .text h2 {
-    font-size: 80px;
+    font-size: 4em;
     font-weight: 700;
     letter-spacing: 4px;
 }
 
 .text p {
-    font-size: 40px;
+    font-size: 3em;
     font-weight: 400;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
+    align-items: center;
 }
 
 .links {
@@ -40,7 +41,7 @@
 .link a {
     color: white;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 1.5em;
     font-weight: 400;
     letter-spacing: 1.5px;
 }
@@ -49,13 +50,19 @@
     .container {
         flex-direction: column;
         gap: 23px;
+        padding: 50px 1%;
     }
     .text {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: left;
+        padding-left: 10%;
     }
     .links {
-        align-items: center;
+        align-items: left;
+    }
+    .link a {
+        font-size: 1em;
+        text-align: left;
     }
 }

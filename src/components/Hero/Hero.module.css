@@ -84,7 +84,7 @@
     -webkit-background-clip: text;
 }
 .description {
-    font-size: 20px;
+    font-size: 30px;
     margin-bottom: 52px;
     color: white;
     justify-content: center;
@@ -196,49 +196,45 @@
     background-color: transparent;
 }
 
-    .pointer {
-        color: rgb(255, 9, 222);
-        font-size: 4em;
-        padding-right: 6px;
-    }
-    .server {
-        color: #5FBCFF;
-        font-size: 4em;
-        padding: 6px;
-    }
-    .aboutItems {
-        color: white;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 50px;
-        padding-bottom: 1em;
-        flex-wrap: wrap;
-    }
+.pointer {
+    color: rgb(255, 9, 222);
+    font-size: 4em;
+    padding-right: 10px;
+}
+.server {
+    color: #5FBCFF;
+    font-size: 4em;
+    padding: 6px;
+}
+.aboutItems {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+    padding-bottom: 1em;
+    flex-wrap: wrap;
+}
     
-    .aboutItem {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        border-radius: 20px;
-        list-style: none;
-        padding: 25px 0;
-        
-    }
-    
-    
-    
-    
-    .aboutItem h3 {
-        font-size: 35px;
-        font-weight: 600;
-        -webkit-animation-name: zoomIn;
-        animation-name: zoomIn;
-        -webkit-animation-duration: 1s;
-        animation-duration: 1s;
-        -webkit-animation-fill-mode: both;
-        animation-fill-mode: both;
-    }
+.aboutItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 20px;
+    list-style: none;
+    padding: 25px 0;   
+}
+       
+.aboutItem h3 {
+    font-size: 35px;
+    font-weight: 600;
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
     @-webkit-keyframes zoomIn {
     0% {
     opacity: 0;
@@ -314,6 +310,9 @@
     }
     .social {
         font-size: 30px;
+    }
+    .aboutItem {
+        padding: 5px 0;  
     }
     
 }
