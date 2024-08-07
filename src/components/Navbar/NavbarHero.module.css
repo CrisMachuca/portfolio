@@ -48,7 +48,7 @@
 }
 
 .menuItems a {
-    font-size: 25px;
+    font-size: 1.4em;
     color: #fff;
     text-decoration: none;
     
@@ -61,7 +61,7 @@
     padding: 10px 20px;
     text-transform: uppercase;
     border-radius: 8px;
-    font-size: 17px;
+    
     font-weight: 500;
     color: #ffffff80;
     text-shadow: none;

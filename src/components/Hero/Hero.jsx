@@ -40,13 +40,13 @@ export const Hero = () => {
             <a href=""><FaGithub className={styles.social}/></a>
           </div>
       </div>
-      
-      <img 
-          src={getImageUrl("hero/heroImage5.png")} alt="Hero image of me" className={styles.heroImg}/>
-      
-      <div className={styles.topBlur}></div>
-      <div className={styles.bottomBlur}></div>
-      
+      <div className={styles.imgContainer}>
+        <img 
+            src={getImageUrl("hero/heroImage5.png")} alt="Hero image of me" className={styles.heroImg}/>
+        
+        <div className={styles.topBlur}></div>
+        <div className={styles.bottomBlur}></div>
+      </div>
     </div>
    
   </section>
