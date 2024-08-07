@@ -10,7 +10,7 @@
   margin-bottom: 20px;
   text-decoration: none;
   /*background-color: #170D22;*/
-  padding: 10px;
+  padding: 0;
   border-radius: 10px;
   justify-items: center;
   border: 3px solid white;
@@ -46,7 +46,7 @@
   top: 10px;
   left: 0;
   right: 0;
-  height: 25%;
+  height: 30%;
   background: rgb(93, 43, 150);
   background: linear-gradient(90deg, rgb(93, 43, 150) 0%, rgba(57,29,109,1) 100%);
   color: white;
@@ -74,9 +74,9 @@
   color: rgb(255, 255, 255);
   text-align: left;
   font-family: "Sora", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 800;
-    font-style: normal;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
 }
 
 .hoverOverlay p {

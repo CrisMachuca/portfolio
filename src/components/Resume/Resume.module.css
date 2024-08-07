@@ -9,15 +9,10 @@
 
 
 
-@media (min-width: 768px) {
-    .container {
-        grid-template-columns: 1fr 1fr;
-        padding: 30px 15em;
-    }
-}
+
 
 .title {
-    font-size: 60px;
+    font-size: 3.5em;
     font-weight: 900;
     margin-bottom: 33px;
     margin-left: 1em;
@@ -60,9 +55,13 @@
     padding-right: 10px;
 }
 
+.history {
+    padding-left: 1px;
+}
 
 ul {
     list-style: none;
+    
 }
 
 p {
@@ -108,3 +107,17 @@ p:hover {
     height: 100%;
     background-color: rgb(255, 255, 255);
 }
+
+@media (min-width: 768px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+        padding: 30px 15em;
+    }
+   
+}
+
+@media (max-width: 768px) {
+    .title {
+        margin-left: 10px;
+    }
+  }
