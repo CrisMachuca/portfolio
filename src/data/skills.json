@@ -40,6 +40,10 @@
       "imageSrc": "skills/flask.png"
     },
     {
+      "title": "SQLAlchemy",
+      "imageSrc": "skills/SQLAlchemy.svg"
+    },
+    {
       "title": "Postman",
       "imageSrc": "skills/postman.svg"
     },

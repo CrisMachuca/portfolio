@@ -13,7 +13,11 @@ export const Hero = () => {
     
     <div className={styles.container}>
       <div className={styles.content}>
-          <h1 className={styles.title}>I'm Cristina Machuca</h1>
+        <div className={styles.titleContainer}>
+        <img src={getImageUrl("hero/wave-hello.gif")} alt="waving hand" className={styles.hand}/>
+          <h1 className={styles.title}>Hello, I am <span className={styles.name}>Cristina Machuca</span></h1>
+          
+        </div>
           <h2 className={styles.subtitle}>&lt;Full Stack Developer/&gt;</h2>
           <div className={styles.services}>
             
@@ -21,19 +25,19 @@ export const Hero = () => {
                 <li className={styles.aboutItem}>
                     <FaArrowPointer className={styles.pointer}/>
                     <div className={styles.aboutItemText}>
-                        <h3 className={styles.front}>Frontend Developer</h3>
+                        <h3 className={styles.front}>Frontend</h3>
                     </div>
                 </li>
                 <li className={styles.aboutItem}>
                     <FaServer className={styles.server}/>
                     <div className={styles.aboutItemText}>
-                        <h3 className={styles.back}>Backend Developer</h3>
+                        <h3 className={styles.back}>Backend</h3>
                     </div>
                 </li>
                 
             </ul>
         </div>
-          <p className={styles.description}>From front-end aesthetics to back-end logic, I craft complete digital solutions. Ready to innovate together?</p>
+          {/*<p className={styles.description}>From front-end aesthetics to back-end logic, I craft complete digital solutions. Ready to innovate together?</p>*/}
           <div className={styles.heroBtns}>
             <a href="/CristinaMachucaResume.pdf" download className={styles.contactBtn}>Download CV <FaDownload /></a> 
             <a href=""><FaLinkedin className={styles.social}/></a>
@@ -41,6 +45,9 @@ export const Hero = () => {
           </div>
       </div>
       <div className={styles.imgContainer}>
+        
+        <img 
+            src={getImageUrl("hero/arrow.png")} alt="white curly arrow" className={styles.arrow}/>
         <img 
             src={getImageUrl("hero/heroImage5.png")} alt="Hero image of me" className={styles.heroImg}/>
         
