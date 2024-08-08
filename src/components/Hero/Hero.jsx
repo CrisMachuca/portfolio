@@ -14,10 +14,11 @@ export const Hero = () => {
     <div className={styles.container}>
       <div className={styles.content}>
         <div className={styles.titleContainer}>
-        <img src={getImageUrl("hero/wave-hello.gif")} alt="waving hand" className={styles.hand}/>
-          <h1 className={styles.title}>Hello, I am <span className={styles.name}>Cristina Machuca</span></h1>
+          <img src={getImageUrl("hero/wave-hello.gif")} alt="waving hand" className={styles.hand}/>
+          <h1 className={styles.title}>Hello, I am </h1>
           
         </div>
+        <h3 className={styles.name}>Cristina Machuca</h3>
           <h2 className={styles.subtitle}>&lt;Full Stack Developer/&gt;</h2>
           <div className={styles.services}>
             
