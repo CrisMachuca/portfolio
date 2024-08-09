@@ -7,4 +7,6 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-color: #8D59F7 #2c153f;
+  
 }
