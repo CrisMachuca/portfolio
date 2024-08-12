@@ -4,7 +4,6 @@
 
 .superContainer {
     position: relative;
-    
 }
 
 .bottomBanner {
@@ -35,7 +34,7 @@
     justify-content: space-between;
     gap: 40px;
     z-index: 1;
-    padding: 0 5% 150px 5%;
+    padding: 3em 5% 150px 5%;
     background: #0F0715;
     
 }
@@ -44,6 +43,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 2em;
     align-items: center;
     color: var(--color-text);
     z-index: 1;
@@ -58,7 +58,7 @@
     
 }
 .title {
-    font-size: 36px;
+    font-size: 3em;
     color: white;
     font-family: "Sora", sans-serif;
     font-optical-sizing: auto;
@@ -72,10 +72,11 @@
     height: auto;
 }
 
-.name {
-    font-size: 3em;
-    font-family: "Pacifico", cursive;
-    font-weight: 400;
+.title .name {
+    font-size: 1em;
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
     font-style: normal;
     color:#8D59F7;
     text-align: center;
@@ -113,9 +114,14 @@
 }
 .heroBtns {
     display: flex;
+    justify-content: center;
     gap: 30px;
     align-items: center;
-    
+    flex-wrap: wrap;
+}
+.links {
+    display: flex;
+    gap: 1em;
 }
 .contactBtn {
     text-decoration: none;
@@ -124,7 +130,7 @@
     border-radius: 100px;
     font-size: 2em;
     font-weight: 600;
-    padding: 17px 26px;
+    padding: 0.5em 1em;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
 }
 .contactBtn:hover {
@@ -143,6 +149,15 @@
 .social:hover {
     background-color: #8D59F7;
     color: white;
+}
+
+.email {
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 @keyframes show {
@@ -167,7 +182,7 @@
 
 
 .arrow {
-    width: 350px;
+    width: 15em;
     transform: rotate(65deg);
     position: absolute;
     top: 0;
@@ -193,22 +208,7 @@
     border: none;
     background-color: transparent;
 }
-
-/*
-.topBlur {
-    position: absolute;
-    width: 50vw;
-    height: 50vw;
-    min-width: 350px;
-    min-width: 350px;
-    top: -128px;
-    left: -10vw;
-    border: 764px;
-    background: linear-gradient(90deg, rgb(68, 29, 99) 0%, rgb(93, 43, 140) 24%, rgba(42,35,89,1) 62%);
-    filter: blur(100px);
-    z-index: 0;
-}
-*/    
+  
 
 .bottomBlur {
     position: absolute;
@@ -221,7 +221,6 @@
     border-radius: 764px;
     background: rgba(32, 3, 59, 0.7);
     filter: blur(100px);
-    
 }
 
 .services {
@@ -245,23 +244,22 @@
     color: white;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    
+    padding: 0;
     gap: 2em;
     padding-bottom: 0.5em;
-    
 }
-    
-.aboutItem {
+   
+
+.aboutItemText {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
-    border-radius: 20px;
-    list-style: none;
-    padding: 5px 0;   
-}
-       
+}      
 .aboutItem h3 {
-    font-size: 3em;
+    font-size: 2em;
     font-weight: 600;
     -webkit-animation-name: zoomIn;
     animation-name: zoomIn;
@@ -299,7 +297,6 @@
 }
 
 .front:hover, :focus {       
-    cursor: pointer;
     text-shadow: 0 0 5px rgb(255, 9, 222), 0 0 10px rgb(255, 9, 222), 0 0 20px rgb(255, 9, 222);
     
   }
@@ -308,7 +305,6 @@
 }
 
 .back:hover, :focus {       
-    cursor: pointer;
     text-shadow: 0 0 5px #5FBCFF, 0 0 10px #5FBCFF, 0 0 20px #5FBCFF;
   }
 
@@ -316,11 +312,15 @@
   @media screen and (max-width: 830px) {
     .container {
         flex-direction: column-reverse;
-        padding: 5% 5% 100px 5%;
+        padding: 20px;
     }
     .content {
         align-items: center;
         text-align: center;
+        width: 100%;
+    }
+    .imgContainer {
+        width: 100%;
     }
     .heroImg {
         width: 100%;
@@ -342,23 +342,28 @@
     }
     .heroBtns {
         flex-direction: column;
+        
     }
     .contactBtn {
         font-size: 1.5em;
-        padding: 12px 20px;
+        padding: 0.5em 1em;
+        width: 250px;
     }
     
     .aboutItem {
         padding: 5px 0;  
     }
+    
     .arrow {
         display: none;
     }
-    .aboutItems {
-        flex-direction: column;
-    }
+    
     .name {
         font-size: 2em;
+    }
+    .links {
+        display: flex;
+        gap: 1em;
     }
 }
 

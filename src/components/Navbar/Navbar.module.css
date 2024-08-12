@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 30px 21px 30px;
+    padding: 10px 30px 21px 10px;
     z-index: 2;
     margin: 0;
     background: #0F0715;
@@ -27,20 +27,30 @@
 a {
     cursor: pointer;
 }
+.logoTitle {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.logo {
+    width: 4em;
+   
+}
+
 .title {
-    font-size: 50px;
+    font-size: 2em;
     font-weight: 600;
     text-decoration: none;
     color: #fff;
     
 }
 .email {
-    font-size: 20px;
+    font-size: 1.2em;
     font-weight: 600;
     text-decoration: none;
     color: #8D59F7;
     margin-bottom: 10px;
-    text-align: left;
+    text-align: right;
 }
 .menu {
     display: flex;
@@ -126,5 +136,11 @@ a {
     .menuOpen {
         display: flex;
         z-index: 1;
+    }
+    .email {
+        display: none;
+    }
+    .title {
+        font-size: 1.5em;
     }
 }

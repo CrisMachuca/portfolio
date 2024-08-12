@@ -35,9 +35,13 @@ const NavbarHero = () => {
   return (
     <nav className={`${styles.navbar} ${isVisible ? styles.navbarVisible : ''}`}>
       <div className={styles.navbarLeft}>
-        <a className={styles.title} href="/">Portfolio</a>
-        <a href="mailto:cristinamachucam@gmail.com" className={styles.email}>cristinamachucam@gmail.com </a>
+        <div className={styles.logoTitle}>
+          <img src={getImageUrl("nav/logo.png")} alt="logo" className={styles.logo}/>
+          <a className={styles.title} href="/">CristinaMachuca</a>
+        </div>
+        
       </div>
+      
       <div className={styles.menu}>
         <img 
           className={styles.menuBtn} 
