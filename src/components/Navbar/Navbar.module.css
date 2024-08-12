@@ -102,7 +102,7 @@ a {
       0 0 100px #8D59F7;
   }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 1045px) {
     .navbar {
         flex-direction: column;
         align-items: flex-start;
@@ -127,6 +127,7 @@ a {
         gap: 13px;
         border-radius: 10px;
         background: rgba(24, 9, 41, 0.842);
+        
         /*
         background: linear-gradient(0deg, rgba(57, 25, 109, 0.2) 0%, rgb(54, 25, 109) 100%);
         */

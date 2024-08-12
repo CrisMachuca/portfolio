@@ -63,9 +63,6 @@ const NavbarHero = () => {
             <a onClick={() => handleNavClick('resume')}>Resume</a>
           </li>
           <li>
-            <a onClick={() => handleNavClick('resume')}>Experience</a>
-          </li>
-          <li>
             <a onClick={() => handleNavClick('skills')}>Skills</a>
           </li>
           <li>

@@ -110,7 +110,7 @@ export const ProjectDetail = () => {
             <WithVisibility animationClass="fromRight">
             <div className={styles.banner}>
               <FaPhoneVolume className={styles.phone} />
-              <h3>Looking for a Full Stack Developer? That could be me.</h3>
+              <h3>Looking for a Full Stack Developer?</h3>
               <button><img className={styles.flag} src={getImageUrl("projectDetail/espana.png")} alt="Spain Flag" />+(34) 660 80 06 31</button>
             </div>
             </WithVisibility>
