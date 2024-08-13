@@ -58,9 +58,32 @@
       "technologies": ["Web Development: HTML, CSS, JavaScript", "Frameworks/Libraries: Likely includes jQuery and other JavaScript libraries for interactive elements.", "CMS: Potential use of a content management system for easy content updates.", "Responsive Design: Ensures usability across various devices."],
       "purpose": "Propaganda Film is dedicated to providing top-tier production services for film, TV, and photography. With over 25 years of industry experience, they offer expert location scouting, production support, and crew management to ensure seamless and professional filming experiences."
     },
-    
     {
       "id": 4,
+      "category": "Personal Project",
+      "title": "Star Wars Wiki",
+      "imageSrc": "projects/starwars.png",
+      "description": "Star Wars Wiki info",
+      "skills": ["React", "Flux", "Bootstrap", "CSS", "external API"],
+      "demo": "https://crismachuca-starwars.vercel.app",
+      "source": "https://github.com/4GeeksAcademy/CrisMachuca-StarWars",
+      "date": "May 2024",
+      "functionality": [
+        "Explore Star Wars Data: Provides detailed information on various Star Wars elements using data fetched from APIs.",
+        "Favorites List: Allows users to add elements to their favorites list for quick access.",
+        "Manage Favorites: Users can easily remove items from their favorites list.",
+        "Search Functionality: Enables users to search for elements by name or partial name.",
+        "User-Friendly Navigation: Includes a return-to-top button and an intuitive top menu for easy navigation."
+      ],
+      "technologies": [
+        "Web Development: React for building dynamic and responsive UI",
+        "Styling: Bootstrap for modern and responsive design",
+        "APIs: Integration of external APIs to fetch and display Star Wars data"
+      ],
+      "purpose": "The Star Wars Wiki project is a personal endeavor to create an engaging and interactive web experience for Star Wars fans. Developed using React and Bootstrap, this project allows users to explore detailed information about the Star Wars universe, manage their favorite items, and search for specific content. It showcases my ability to work with APIs, implement dynamic user interfaces, and create intuitive navigation structures, all while delivering a rich and immersive user experience."
+    },
+    {
+      "id": 5,
       "category": "personal project",
       "title": "Hangman",
       "imageSrc": "projects/ahorcado.png",
@@ -86,7 +109,7 @@
       "purpose": "The Hangman project is a personal endeavor to recreate the classic Hangman game using modern web technologies. It was developed as a part of my learning journey at 4Geeks Academy Spain. This project not only challenged me to implement game logic and user interface design but also allowed me to enhance my skills in React and Bootstrap. The goal was to create a fun, interactive, and visually appealing game that users can enjoy while showcasing my abilities in web development."
     },
     {
-      "id": 5,
+      "id": 6,
       "category": "web aplication",
       "title": "Domain Generator",
       "imageSrc": "projects/domain.png",
@@ -110,7 +133,7 @@
       "purpose": "The Domain Generator project is a dynamic tool designed to revolutionize the way users explore and create domain names. Developed as part of my learning journey at 4Geeks Academy España, this application blends HTML, Bootstrap, CSS, and JavaScript to offer a seamless and intuitive user experience. It empowers users to customize their domain names, providing endless possibilities and ensuring a perfect fit for their brand, project, or venture. This project highlights my ability to create practical and innovative web applications that meet real-world needs."
     },
     {
-      "id": 6,
+      "id": 7,
       "category": "personal project",
       "title": "Rock Paper Scissors",
       "imageSrc": "projects/rockpaper.png",
@@ -134,7 +157,7 @@
 
     },
     {
-      "id": 7,
+      "id": 8,
       "category": "personal project",
       "title": "Cards Generator",
       "imageSrc": "projects/cardsgenerator.png",

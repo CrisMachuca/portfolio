@@ -37,7 +37,7 @@ const NavbarHero = () => {
       <div className={styles.navbarLeft}>
         <div className={styles.logoTitle}>
           <img src={getImageUrl("nav/logo.png")} alt="logo" className={styles.logo}/>
-          <a className={styles.title} href="/">CristinaMachuca</a>
+          <a className={styles.title} href="/"><span><i>Cristina</i></span><i>Machuca</i></a>
         </div>
         
       </div>

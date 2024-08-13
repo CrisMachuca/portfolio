@@ -90,16 +90,23 @@
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
-    /*
+    
     background: linear-gradient(
         90deg, 
-        #8D59F7 60%,
+        #8D59F7 10%,
         rgb(255, 255, 255) 120%
     );
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;*/
-    color: white;
+    -webkit-background-clip: text;
+    
     text-align: center;
+    /*
+    text-shadow: 
+        0 0 5px #8D59F7,
+        0 0 10px #8D59F7,
+        0 0 10px #8D59F7,
+        0 0 50px #8D59F7;
+    */  
 }
 .description {
     font-size: 30px;

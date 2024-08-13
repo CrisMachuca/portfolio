@@ -47,7 +47,7 @@ export const Hero = () => {
               <a href=""><FaLinkedin className={styles.social}/></a>
               <a href=""><FaGithub className={styles.social}/></a>
             </div>
-            <a href="mailto:cristinamachucam@gmail.com" className={styles.email}>cristinamachucam@gmail.com </a>
+            
         </div>
       </div>
       <div className={styles.imgContainer}>

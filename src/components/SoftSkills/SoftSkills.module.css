@@ -7,69 +7,109 @@
     
 }
 
-.title {
-    font-size: 2em;
-    text-align: center;
-    font-weight: 900;
-    font-family: var(--font-roboto);
-    color: white;
-}
-
-
-
 .softSkills {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 elementos en línea */
-    padding: 1em;
+    grid-template-columns: repeat(4, 1fr); /* Por defecto, 4 columnas */
+    padding: 2em;
+    gap: 5vw;
 }
+
+/* Pantallas medianas: 2 columnas */
+@media (max-width: 1024px) {
+    .softSkills {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Pantallas pequeñas: 2 columnas */
 @media (max-width: 768px) {
     .softSkills {
-      grid-template-columns: repeat(2, 1fr); /* 2 elementos en línea en pantallas pequeñas */
-      
+        grid-template-columns: repeat(2, 1fr);
     }
-  }
+}
 
-.softSkill {
+/* Pantallas muy pequeñas: 2 columnas */
+@media (max-width: 480px) {
+    .softSkills {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+  .softSkill {
+    position: relative;
+    
+    border: 1px solid #2A1454;
+    border-radius: 20px;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1em;
-    text-align: center;
-    
+    justify-content: center;
+    transition: background-color 0.3s;
+    padding: 1.5em;
+}
+
+.softSkillImageContainer,
+.title {
+    z-index: 1;
+    transition: opacity 0.3s, visibility 0.3s;
 }
 
 .softSkillImageContainer {
-    background: rgb(252,69,236);
-    background: linear-gradient(180deg, rgba(252,69,236,1) 0%, rgb(175, 56, 230) 91%);
+    background: #2A1454;
     border-radius: 10px;
+    padding: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     max-width: 150px;
     max-height: 150px;
-    padding: 10px;
 }
-.softSkillImageContainer:hover {
-    border: 2px solid #8D59F7;
-}
-
 .softSkillImageContainer img {
     max-width: 100px;
-    
-}
-.softSkillImageContainer img:hover {
-    
-    filter: brightness(1.1) sepia(0) ;
+    filter: invert(1) brightness(2); /*las imagenes son negras, con esto invierto el color para que sean blancas*/
 }
 
-
+.title {
+    font-size: 2em;
+    font-weight: 900;
+    color: #fff;
+    margin-top: 10px;
+}
 
 .description {
-    max-width: 350px;
-    font-size: 1.4em;
-    color: grey;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2A1454;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding-top: 5px;
+    font-size: 2em;
+    padding: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 2s;
+    z-index: 2;
+}
+.description p {
+    color: white;
+    font-size: 0.8em;
+}
+.softSkill:hover .softSkillImageContainer,
+.softSkill:hover .title {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.softSkill:hover .description {
+    opacity: 1;
+    visibility: visible;
+    color: white;
 }
 
 @media screen and (max-width: 830px) {
@@ -88,7 +128,5 @@
         width: 100%;
         gap: 9px;
     }
-    .description {
-        font-size: 1em;
-    }
+    
 }
