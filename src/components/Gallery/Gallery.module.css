@@ -1,32 +1,33 @@
 @import "../../vars.css";
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 
+/* Definir un contenedor responsivo */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 20px;
   width: 100%;
   max-width: 1200px;
-  margin-bottom: 20px;
+  margin: 0 auto;
   text-decoration: none;
-  /*background-color: #170D22;*/
   padding: 0;
   border-radius: 10px;
   justify-items: center;
   border: 3px solid white;
 }
 
-
-/* efecto zoe */
+/* Ajustes en .effectZoe */
 .effectZoe {
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  height: 450px;
-  width: 450px;
+  height: auto;
+  width: 100%;
   border-radius: 10px;
+  aspect-ratio: 1 / 1; 
 }
 
+/* Ajustes en la imagen */
 .effectZoe img {
   display: block;
   position: relative;
@@ -38,39 +39,37 @@
   z-index: 1;
 }
 
-
-
 /* hover overlay */
 .hoverOverlay {
   position: absolute;
   top: 10px;
   left: 0;
   right: 0;
-  height: 30%;
-  background: rgb(93, 43, 150);
+  height: 20vh;
   background: linear-gradient(90deg, rgb(93, 43, 150) 0%, rgba(57,29,109,1) 100%);
   color: white;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
   padding-left: 0.5em;
   opacity: 0;
   transition: opacity 0.3s ease, transform 0.3s ease;
   border-radius: 10px;
-  border: 4px solid white;
   z-index: 5;
-  
 }
+
 .effectZoe:hover img {
   transform: scale(1.1);
   opacity: 0.5;
 }
+
 .effectZoe:hover .hoverOverlay {
   opacity: 1;
   transform: translateY(-10px);
 }
+
 .hoverOverlay p, .hoverOverlay h1 {
   color: rgb(255, 255, 255);
   text-align: left;
@@ -87,24 +86,31 @@
 .arrow {
   font-size: 2em;
   transition: transform 0.5s ease;
-  
 }
+
 .effectZoe:hover .hoverOverlay .arrow {
   transform: translate(15px, 0px);
 }
 
+/* Ajustes para pantallas pequeñas */
 @media (max-width: 768px) {
   .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 20px;
-    width: 100%;
-    max-width: 1200px;
-    margin-bottom: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
+
   .effectZoe {
-    width: 100%;
     height: auto;
     aspect-ratio: 1 / 1;
   }
+
+  .hoverOverlay {
+    padding: 1em;
+    height: auto;
+  }
+  
+  .arrow {
+    font-size: 1.5em;
+  }
 }
+
+

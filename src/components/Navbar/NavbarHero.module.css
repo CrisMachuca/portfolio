@@ -121,10 +121,7 @@
         align-items: center;
         gap: 13px;
         border-radius: 10px;
-        background: rgba(24, 9, 41, 0.842);
-        /*
-        background: linear-gradient(0deg, rgba(57, 25, 109, 0.2) 0%, rgb(54, 25, 109) 100%);
-        */
+        background: rgba(24, 9, 41, 0.918);
         padding: 24px 83px;
         box-shadow: 0, 0 4px 0 rgba(0,0,0,0.25);
     }
