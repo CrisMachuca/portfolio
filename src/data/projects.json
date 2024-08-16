@@ -1,0 +1,182 @@
+[
+    {
+      "id": 1,
+      "category": "e-commerce",
+      "title": "FriKommerce",
+      "imageSrc": "projects/project.png",
+      "description": "E-commerce friki stuff",
+      "skills": ["React", "Express", "Node"],
+      "demo": "https://www.example.com",
+      "source": "https://www.github.com",
+      "date": "Current",
+      "functionality": ["Photo & Film Locations: Provides detailed information and images of various filming locations across southern Europe.", "Production Services: Offers comprehensive production services including location scouting, crew booking, production support, and filming advice.", "Contact & Inquiry Forms: Easy-to-use contact forms for inquiries and service requests.", "Multilingual Support: Available in both English and French."],
+      "technologies": ["Web Development: HTML, CSS, JavaScript", "Frameworks/Libraries: Likely includes jQuery and other JavaScript libraries for interactive elements.", "CMS: Potential use of a content management system for easy content updates.", "Responsive Design: Ensures usability across various devices."],
+      "purpose": "Propaganda Film is dedicated to providing top-tier production services for film, TV, and photography. With over 25 years of industry experience, they offer expert location scouting, production support, and crew management to ensure seamless and professional filming experiences."
+    },
+    {
+      "id": 2,
+      "category": "web aplication",
+      "title": "Guau...Guau",
+      "imageSrc": "projects/guau.png",
+      "extraImg": ["projects/geocoding.png", "projects/petdetails.png", "projects/petsgallery.png", "projects/matchmodal.png", "projects/like.png", "projects/chat.png"],
+      "description": "Web app for dog's dates.",
+      "skills": ["React", "BootStrap", "Python", "Flask", "SQLAlquemy", "JWT", "Socket.io", "Cloudinary", "Geocoding", "OpenAI"],
+      "demo": "https://www.example.com",
+      "source": "https://github.com/CrisMachuca/guauguau",
+      "date": "June 2024",
+      "functionality": [
+      "User Registration: Allows owners to register and add profiles for one or more dogs.",
+      "Dog Matching: Users can interact through 'likes' and 'matches' and chat in real-time if a match is made.",
+      "Search & Filter: Users can filter dogs by breed, sex, age, and location using external APIs and geocoding.",
+      "Secure Authentication: Implements JWT for secure user authentication.",
+      "Profile & Photo Management: Users can add and store profile photos and additional photos via Cloudinary.",
+      "AI Integration: Provides care information and breed compatibility using OpenAI."
+      ],
+      "technologies": [
+      "Front-End Development: React, Bootstrap, CSS",
+      "Back-End Development: Python, Flask, SQLAlchemy",
+      "Real-Time Communication: Socket.io for real-time chat functionality",
+      "API Integration: External API calls for breed information and geocoding",
+      "Authentication: Secure authentication using JWT",
+      "Cloud Services: Cloudinary for photo storage",
+      "AI Services: OpenAI for providing care information and breed compatibility"
+      ],
+      "purpose": "GUAU GUAU is a web application designed to facilitate dog dating. Created as a final project for 4Geeks Academy Spain, it allows dog owners to find matches for their pets, ensuring they can interact and form connections. The application not only offers a fun way to connect but also incorporates advanced features like real-time chat, secure authentication, and AI-driven insights to enhance user experience."
+    },
+    {
+      "id": 3,
+      "category": "Landing Page",
+      "title": "Propaganda film",
+      "imageSrc": "projects/propaganda.png",
+      "extraImg": ["projects/propaganda1.png", "projects/propaganda2.png"],
+      "description": "Landing Page",
+      "skills": ["HTML", "CSS", "Vanilla JS", "JSON"],
+      "demo": "https://www.propagandafilm.tv",
+      "source": "https://github.com/CrisMachuca/propagandafilm",
+      "date": "December 2023",
+      "functionality": ["Photo & Film Locations: Provides detailed information and images of various filming locations across southern Europe.", "Production Services: Offers comprehensive production services including location scouting, crew booking, production support, and filming advice.", "Contact & Inquiry Forms: Easy-to-use contact forms for inquiries and service requests.", "Multilingual Support: Available in both English and French."],
+      "technologies": ["Web Development: HTML, CSS, JavaScript", "Frameworks/Libraries: Likely includes jQuery and other JavaScript libraries for interactive elements.", "CMS: Potential use of a content management system for easy content updates.", "Responsive Design: Ensures usability across various devices."],
+      "purpose": "Propaganda Film is dedicated to providing top-tier production services for film, TV, and photography. With over 25 years of industry experience, they offer expert location scouting, production support, and crew management to ensure seamless and professional filming experiences."
+    },
+    {
+      "id": 4,
+      "category": "Personal Project",
+      "title": "Star Wars Wiki",
+      "imageSrc": "projects/starwars.png",
+      "description": "Star Wars Wiki info",
+      "skills": ["React", "Flux", "Bootstrap", "CSS", "external API"],
+      "demo": "https://crismachuca-starwars.vercel.app",
+      "source": "https://github.com/4GeeksAcademy/CrisMachuca-StarWars",
+      "date": "May 2024",
+      "functionality": [
+        "Explore Star Wars Data: Provides detailed information on various Star Wars elements using data fetched from APIs.",
+        "Favorites List: Allows users to add elements to their favorites list for quick access.",
+        "Manage Favorites: Users can easily remove items from their favorites list.",
+        "Search Functionality: Enables users to search for elements by name or partial name.",
+        "User-Friendly Navigation: Includes a return-to-top button and an intuitive top menu for easy navigation."
+      ],
+      "technologies": [
+        "Web Development: React for building dynamic and responsive UI",
+        "Styling: Bootstrap for modern and responsive design",
+        "APIs: Integration of external APIs to fetch and display Star Wars data"
+      ],
+      "purpose": "The Star Wars Wiki project is a personal endeavor to create an engaging and interactive web experience for Star Wars fans. Developed using React and Bootstrap, this project allows users to explore detailed information about the Star Wars universe, manage their favorite items, and search for specific content. It showcases my ability to work with APIs, implement dynamic user interfaces, and create intuitive navigation structures, all while delivering a rich and immersive user experience."
+    },
+    {
+      "id": 5,
+      "category": "personal project",
+      "title": "Hangman",
+      "imageSrc": "projects/ahorcado.png",
+      "extraImg": ["projects/hangman2.png"],
+      "description": "The popular game",
+      "skills": ["HTML", "CSS", "Bootstrap", "React"],
+      "demo": "https://crismachuca.github.io/ahorcado/",
+      "source": "https://github.com/CrisMachuca/ahorcado",
+      "date": "May 2024",
+      "functionality": [
+      "Random Word Generation: Generates random words for each game session.",
+      "Game Logic Handling: Manages the core logic of the Hangman game, including letter guessing and tracking the number of attempts.",
+      "User Interface: Provides a modern and attractive interface using Bootstrap.",
+      "Dark Mode: Includes a dark mode switch for an immersive gaming experience.",
+      "Responsive Design: Ensures the game is playable on various devices."
+      ],
+      "technologies": [
+      "Web Development: HTML, CSS, JavaScript",
+      "Frameworks/Libraries: React for building the user interface",
+      "Styling: Bootstrap for modern and responsive design",
+      "Dark Mode Implementation: Custom logic for toggling dark mode"
+      ],
+      "purpose": "The Hangman project is a personal endeavor to recreate the classic Hangman game using modern web technologies. It was developed as a part of my learning journey at 4Geeks Academy Spain. This project not only challenged me to implement game logic and user interface design but also allowed me to enhance my skills in React and Bootstrap. The goal was to create a fun, interactive, and visually appealing game that users can enjoy while showcasing my abilities in web development."
+    },
+    {
+      "id": 6,
+      "category": "web aplication",
+      "title": "Domain Generator",
+      "imageSrc": "projects/domain.png",
+      "description": "Web aplication",
+      "skills": ["HTML", "CSS", "BootStrap", "Vanilla JS"],
+      "demo": "https://crismachuca.github.io/DOMAIN-GENERATOR/",
+      "source": "https://github.com/CrisMachuca/DOMAIN-GENERATOR",
+      "date": "March 2024",
+      "functionality": [
+      "Random Domain Generation: Generates random domain names based on user preferences.",
+      "Customization Options: Allows users to customize specific segments of their domain names for a personalized touch.",
+      "Comprehensive Suggestions: Provides a comprehensive list of all possible domain name combinations.",
+      "User-Friendly Interface: Intuitive controls for easy customization and exploration.",
+      "Responsive Design: Ensures usability across various devices and screen sizes."
+      ],
+      "technologies": [
+      "Web Development: HTML, CSS, JavaScript",
+      "Styling: Bootstrap for modern and responsive design",
+      "JavaScript Logic: Vanilla JS for dynamic functionality"
+      ],
+      "purpose": "The Domain Generator project is a dynamic tool designed to revolutionize the way users explore and create domain names. Developed as part of my learning journey at 4Geeks Academy España, this application blends HTML, Bootstrap, CSS, and JavaScript to offer a seamless and intuitive user experience. It empowers users to customize their domain names, providing endless possibilities and ensuring a perfect fit for their brand, project, or venture. This project highlights my ability to create practical and innovative web applications that meet real-world needs."
+    },
+    {
+      "id": 7,
+      "category": "personal project",
+      "title": "Rock Paper Scissors",
+      "imageSrc": "projects/rockpaper.png",
+      "description": "The addictive game",
+      "skills": ["HTML", "CSS", "BootStrap", "Vanilla JS"],
+      "demo": "https://crismachuca.github.io/ROCK-PAPER-SCISSORS/",
+      "source": "https://github.com/CrisMachuca/ROCK-PAPER-SCISSORS",
+      "date": "April 2024",
+      "functionality": [
+      "Game Mechanics: Implements the classic rock-paper-scissors game with interactive play.",
+      "Match Counter: Keeps track of the number of matches played.",
+      "End Game Pop-up: Displays a pop-up when the game ends.",
+      "Reset Button: Allows users to reset the game and start over.",
+      "User Interface: Provides a visually appealing and intuitive interface using Bootstrap."
+    ],
+      "technologies": [
+      "Web Development: HTML, CSS, JavaScript",
+      "Styling: Bootstrap for modern and responsive design"
+    ],
+      "purpose": "The Rock Paper Scissors project is a personal initiative to recreate the classic game with a modern and personal touch. Developed using HTML, CSS, JavaScript, and Bootstrap, this project features an interactive interface, a match counter, and end game notifications. It demonstrates my ability to create engaging and functional web applications, delivering a seamless user experience through client-side technologies and responsive design."
+
+    },
+    {
+      "id": 8,
+      "category": "personal project",
+      "title": "Cards Generator",
+      "imageSrc": "projects/cardsgenerator.png",
+      "description": "A game",
+      "skills": ["HTML", "CSS", "Vanilla JS"],
+      "demo": "https://crismachuca.github.io/RANDOM-CARDS-GENERATOR/",
+      "source": "https://github.com/CrisMachuca/RANDOM-CARDS-GENERATOR",
+      "date": "March 2024",
+      "functionality": [
+        "Random Card Generation: Generates a new random card each time the page is reloaded, every 5 seconds, or when the user clicks a button.",
+        "Multiple Card Generation: Allows users to generate multiple random cards at once.",
+        "Card Size Adjustment: Users can modify the width and height of the cards through input fields.",
+        "User Interface: Provides a visually appealing and intuitive interface using Bootstrap."
+      ],
+      "technologies": [
+        "Web Development: HTML, CSS, JavaScript",
+        "Styling: Bootstrap for modern and responsive design"
+      ],
+      "purpose": "The Cards Generator project is a personal initiative to create a dynamic and interactive random card generator. Developed using HTML, CSS, JavaScript, and Bootstrap, this project features multiple ways to generate random cards, including automatic intervals and user-initiated actions. It also allows for customization of card sizes, showcasing my ability to add complex functionalities and enhance user experience. This project demonstrates my problem-solving skills and my passion for learning and applying new programming concepts."
+    
+    }
+  ]

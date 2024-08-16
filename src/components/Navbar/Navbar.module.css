@@ -1,0 +1,145 @@
+@import "../../vars.css";
+
+.navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px 21px 10px;
+    z-index: 2;
+    margin: 0;
+    background: #0F0715;
+    transition: all 0.5s ease-in-out;
+    position: fixed;
+    top: -250px; /* Altura del navbar fuera de la vista */
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+.navbarVisible {
+    top: 0; /* Navbar visible */
+  }
+.navbarLeft {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    cursor: pointer;
+}
+.logoTitle {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.logo {
+    width: 4em;
+   
+}
+
+.title {
+    font-size: 2.5em;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+}
+.title span {
+    color: #8D59F7;
+}
+.email {
+    font-size: 1.2em;
+    font-weight: 600;
+    text-decoration: none;
+    color: #8D59F7;
+    margin-bottom: 10px;
+    text-align: right;
+}
+.menu {
+    display: flex;
+    margin-right: 30px;
+}
+.menuBtn {
+    display: none; 
+}
+.menuItems {
+    display: flex;
+    align-items: center;
+    gap: 47px;
+    list-style: none;
+}
+
+.menuItems a {
+    font-size: 1.4em;
+    color: #fff;
+    text-decoration: none;
+    
+}
+.menuItems a:hover {
+    border-bottom: 4px solid #8D59F7;
+}
+
+.hire {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 2em;
+    font-weight: 500;
+    color: #ffffff80;
+    text-shadow: none;
+    background: transparent;
+    cursor: pointer;
+    box-shadow: transparent;
+    border: 1px solid #8D59F7;
+    transition: 0.5s ease;
+    user-select: none;
+  }
+  
+  .hire:hover,
+  :focus {
+    color: #ffffff;
+    background: #8D59F7;
+    border: 1px solid #8D59F7;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+    box-shadow: 0 0 5px #8D59F7, 0 0 20px #8D59F7, 0 0 50px #8D59F7,
+      0 0 100px #8D59F7;
+  }
+
+@media screen and (max-width: 1045px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .menu {
+        position: absolute;
+        right: 0;
+        margin-right: 5%;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 11px;
+        z-index: 3;
+    }
+    .menuBtn {
+        display: block;
+        cursor: pointer;
+    }
+    .menuItems {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 13px;
+        border-radius: 10px;
+        background: rgba(24, 9, 41, 0.918);
+        padding: 40px 120px;
+        box-shadow: 0, 0 4px 0 rgba(0,0,0,0.25);
+    }
+    .menuOpen {
+        display: flex;
+        z-index: 1;
+    }
+    .email {
+        display: none;
+    }
+    .title {
+        font-size: 1.5em;
+    }
+}

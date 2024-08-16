@@ -1,0 +1,35 @@
+[
+    {
+      "role": "Front End Freelance",
+      "organisation": "Propaganda Film",
+      "startDate": "2022",
+      "endDate": "2023",
+      "experiences": ["Worked on Landing Page"],
+      "imageSrc": "history/Propaganda.png"
+    },
+    {
+      "role": "Customer Service Specialist",
+      "organisation": "Mas Orange",
+      "startDate": "2013",
+      "endDate": "Present",
+      "experiences": ["Technical Support", "Commercial Management", "Issue Resolution"],
+      "imageSrc": "history/masorange.svg"
+    },
+    {
+      "role": "Sales and Customer Service",
+      "organisation": "Jazztel",
+      "startDate": "2010",
+      "endDate": "2013",
+      "experiences": ["Product Promotion and Sales", "Commercial Management"],
+      "imageSrc": "history/jazztel.svg"
+    },
+    {
+      "role": "Sales Consultant",
+      "organisation": "Kutxa Bank",
+      "startDate": "2008",
+      "endDate": "2009",
+      "experiences": [
+        "Customer Service", "Cross-Selling", "Product Promotion and Sales"],
+      "imageSrc": "history/netflix.png"
+    }
+  ]

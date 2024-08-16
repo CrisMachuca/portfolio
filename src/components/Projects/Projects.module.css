@@ -1,0 +1,126 @@
+@import "../../vars.css";
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+
+.galleryContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Por defecto, 4 columnas */
+  gap: 20px; 
+  justify-content: center;
+  padding: 1em 22em;
+}
+  
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Centra horizontalmente */
+  text-align: center;
+  padding: 76px 2em;
+  color: var(--color-text);
+  background-color: #0F0715;
+}
+
+.title {
+    font-size: 60px;
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: 1em;
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    display: inline-block;
+    /*background: linear-gradient(
+        90deg, 
+        #8D59F7 20%,
+        rgb(255, 255, 255) 100%
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;*/
+    color: white;
+    border-bottom: 8px solid #8D59F7;
+}
+.subtitle {
+  text-align: center;
+  font-size: 4em;
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  animation: colorChange 5s infinite;
+  }
+
+  @keyframes colorChange {
+    0% {
+      color: #8D59F7;
+    }
+    25% {
+      color: #fa00af; 
+    }
+    50% {
+      color: #af03af; 
+    }
+    75% {
+      color: #b913e2; 
+    }
+    100% {
+      color: #ff00d4; 
+    }
+  } 
+
+
+  
+  .title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .filters {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .filters button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;  
+    font-size: 2em;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .filters button:hover {
+    background-color: #8D59F7;
+    color: white;
+  }
+ 
+ 
+  @media (max-width: 768px) {
+   
+  .container {
+      padding: 76px 0.5em;
+      color: var(--color-text);
+      background-color: #0F0715;
+    }
+    .filters button {
+      font-size: 1.2em;
+      padding: 10px;
+      margin: 2px;
+      background-color: #8D59F7;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .galleryContainer {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 1em 0.5em;
+    }  
+    
+    }
+
+ 

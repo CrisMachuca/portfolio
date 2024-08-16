@@ -1,0 +1,25 @@
+.container {
+    background-color: #0F0715;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+
+
+.rotate1 {
+    background: rgb(41,0,87);
+    /*background: linear-gradient(265deg, rgb(28, 3, 56) 20%, rgba(184,122,255,1) 62%, rgba(250,245,255,1) 93%);*/
+    height: 40px;
+    width: 100%;
+    /*clip-path: polygon(100% 0%, 0% 100%, 100% 100%);*/
+    position: absolute;
+    bottom: 0;
+    z-index: 5;
+    transform: rotate(-2deg);
+}
+
+.title {
+    color: white;
+}
