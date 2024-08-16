@@ -52,6 +52,14 @@ export const ProjectDetail = () => {
         </WithVisibility>
         <div className={styles.mainTextContainer}>
           <div className={styles.left}>
+          <div className={styles.block}>
+              <WithVisibility animationClass="fromBottom">
+                <h1>Website Purpose</h1>
+              </WithVisibility>
+              <WithVisibility animationClass="fromBottom">
+                <p>{project.purpose}</p>
+              </WithVisibility>
+            </div>
             <div className={styles.block}>
               <WithVisibility animationClass="fromBottom">
                 <h1>Website Functionality</h1>
@@ -76,14 +84,7 @@ export const ProjectDetail = () => {
                 ))}
               </ul>
             </div>
-            <div className={styles.block}>
-              <WithVisibility animationClass="fromBottom">
-                <h1>Website Purpose</h1>
-              </WithVisibility>
-              <WithVisibility animationClass="fromBottom">
-                <p>{project.purpose}</p>
-              </WithVisibility>
-            </div>
+            
 
             {project.extraImg && (
               <div className={styles.block4}>

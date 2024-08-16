@@ -1,18 +1,35 @@
 [
     {
       "id": 1,
-      "category": "e-commerce",
+      "category": "E-commerce",
       "title": "FriKommerce",
-      "imageSrc": "projects/project.png",
-      "description": "E-commerce friki stuff",
-      "skills": ["React", "Express", "Node"],
+      "imageSrc": "projects/under.jpg",
+      "description": "E-commerce for geek merchandise",
+      "skills": ["React", "Bootstrap", "Flask", "SQLAlchemy", "JWT", "Redux Toolkit", "Docker", "Stripe API"],
       "demo": "https://www.example.com",
       "source": "https://www.github.com",
       "date": "Current",
-      "functionality": ["Photo & Film Locations: Provides detailed information and images of various filming locations across southern Europe.", "Production Services: Offers comprehensive production services including location scouting, crew booking, production support, and filming advice.", "Contact & Inquiry Forms: Easy-to-use contact forms for inquiries and service requests.", "Multilingual Support: Available in both English and French."],
-      "technologies": ["Web Development: HTML, CSS, JavaScript", "Frameworks/Libraries: Likely includes jQuery and other JavaScript libraries for interactive elements.", "CMS: Potential use of a content management system for easy content updates.", "Responsive Design: Ensures usability across various devices."],
-      "purpose": "Propaganda Film is dedicated to providing top-tier production services for film, TV, and photography. With over 25 years of industry experience, they offer expert location scouting, production support, and crew management to ensure seamless and professional filming experiences."
+      "functionality": [
+        "User Authentication: Provides user registration, login, and password recovery using JWT for secure authentication.",
+        "Product Management: Includes product listing, filtering, and detailed views of each product.",
+        "Shopping Cart: Allows users to add, remove, and update products in their cart.",
+        "Payment Processing: Integrates Stripe API to simulate real payments during the checkout process.",
+        "Admin Panel: A basic admin panel for managing products and orders.",
+        "Purchase History: Users can view their past purchases in a dedicated section."
+      ],
+      "technologies": [
+        "Front-End: React for building a dynamic and responsive user interface.",
+        "State Management: Redux Toolkit for managing the application state effectively.",
+        "Back-End: Flask for handling server-side logic and creating APIs.",
+        "Database: SQLAlchemy for interacting with the database, using SQLite or PostgreSQL.",
+        "Authentication: JWT (JSON Web Tokens) for secure user authentication.",
+        "Payment Gateway: Stripe API for integrating and simulating payment processing.",
+        "Containerization: Docker for containerizing the application to ensure consistency across environments.",
+        "Styling: Bootstrap for creating a modern and responsive design."
+      ],
+      "purpose": "The FriKommerce project is an e-commerce platform aimed at providing geek culture enthusiasts with a wide variety of merchandise. This platform offers a secure and efficient shopping experience, complete with user authentication, a comprehensive product management system, a shopping cart, and a payment processing feature using Stripe. With an admin panel for product and order management, as well as a purchase history feature for users, FriKommerce is designed to be a robust and user-friendly e-commerce solution. The project also serves as a learning platform for integrating new technologies such as Redux Toolkit, Docker, and Stripe API."
     },
+  
     {
       "id": 2,
       "category": "web aplication",
