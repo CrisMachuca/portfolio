@@ -12,6 +12,7 @@ import { SoftSkills } from './components/SoftSkills/SoftSkills';
 import { ProjectDetail } from './components/ProjectDetail/ProjectDetail';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import WithVisibility from './components/WithVisibility/WithVisibility';
+import { NotAvailable } from './components/NotAvailable/NotAvailable';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/project/:id" element={<ProjectDetail />} />
+          <Route path="/not-available/:id" element={<NotAvailable />} />
         </Routes>
       </div>
     </Router>
