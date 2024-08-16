@@ -6,7 +6,7 @@ import styles from './NotAvailable.module.css';
 import { getImageUrl } from '../../utils';
 import NavbarHero from '../Navbar/NavbarHero';
 import { FaCode, FaEye, FaGlobe, FaPhoneVolume } from 'react-icons/fa';
-import WithVisibility from '../WithVisibility/WithVisibility';
+
 
 export const NotAvailable = () => {
     const navigate = useNavigate();
