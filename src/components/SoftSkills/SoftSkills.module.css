@@ -40,7 +40,7 @@
     
     border: 1px solid #8e59f780;
     border-radius: 20px;
-    overflow: hidden;
+    overflow: visible;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -89,16 +89,43 @@
     background-color: #8e59f7bb;
     color: white;
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* Alinea el contenido debajo de la imagen */
     justify-content: center;
     text-align: center;
     font-size: 2em;
-    padding: 20px;
+    padding: 220px 20px 20px; /* Ajusta el padding para dar espacio a la imagen */
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s, visibility 2s;
     z-index: 2;
+    display: flex;
+    flex-direction: column;
 }
+
+.softSkillImageContainer2 {
+    background: #050709;
+    border: 1px solid #8e59f780;
+    border-radius: 50%;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 150px;
+    max-height: 150px;
+    position: absolute;
+    top: -100px; /* Esto hace que sobresalga por arriba */
+    left: 50%;
+    transform: translateX(-50%); /* Centra la imagen horizontalmente */
+    z-index: 3;
+    
+}
+.softSkillImageContainer2 img {
+    max-width: 100px;
+    filter: invert(1) brightness(2); /*las imagenes son negras, con esto invierto el color para que sean blancas*/
+}
+
+
+
 .description p {
     color: white;
     font-size: 0.8em;

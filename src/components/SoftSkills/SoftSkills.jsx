@@ -19,6 +19,9 @@ export const SoftSkills = () => {
                     </div>
                     <p className={styles.title}>{softskill.title}</p>
                     <div className={styles.description}>
+                    <div className={styles.softSkillImageContainer2}>
+                        <img src={getImageUrl(softskill.imageSrc)} alt={softskill.title} /> 
+                    </div>
                         <p>{softskill.description}</p>
                     </div>
                 </div>
