@@ -1,11 +1,18 @@
 import React, { useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import projects from '../../data/projects.json';
-import styles from './ProjectDetail.module.css';
+
 import { getImageUrl } from '../../utils';
 import NavbarHero from '../Navbar/NavbarHero';
 import { FaCode, FaGlobe, FaPhoneVolume } from 'react-icons/fa';
 import WithVisibility from '../WithVisibility/WithVisibility';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { Navigation, Pagination } from 'swiper/modules';
+import styles from './ProjectDetail.module.css';
+
 
 export const ProjectDetail = () => {
   const { id } = useParams();
@@ -42,7 +49,7 @@ export const ProjectDetail = () => {
                 href={project.demo} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                onClick={handleLiveClick} // Añadir el manejador de clics aquí
+                onClick={handleLiveClick} 
               >
                 <FaGlobe /> View site on Live!
               </a>
@@ -52,47 +59,59 @@ export const ProjectDetail = () => {
         </WithVisibility>
         <div className={styles.mainTextContainer}>
           <div className={styles.left}>
-          <div className={styles.block}>
-              <WithVisibility animationClass="fromBottom">
-                <h1>Website Purpose</h1>
-              </WithVisibility>
-              <WithVisibility animationClass="fromBottom">
-                <p>{project.purpose}</p>
-              </WithVisibility>
-            </div>
             <div className={styles.block}>
-              <WithVisibility animationClass="fromBottom">
-                <h1>Website Functionality</h1>
-              </WithVisibility>
-              <ul>
-                {project.functionality.map((functionality, index) => (
-                  <WithVisibility key={index} animationClass="fromBottom">
-                    <li>{functionality}</li>
-                  </WithVisibility>
-                ))}
-              </ul>
-            </div>
-            <div className={styles.block}>
-              <WithVisibility animationClass="fromBottom">
-                <h1>Technologies Used</h1>
-              </WithVisibility>
-              <ul>
-                {project.technologies.map((technology, index) => (
-                  <WithVisibility key={index} animationClass="fromBottom">
-                    <li>{technology}</li>
-                  </WithVisibility>
-                ))}
-              </ul>
-            </div>
-            
-
-            {project.extraImg && (
-              <div className={styles.block4}>
-                {project.extraImg.map((extraImg, index) => (
-                  <img key={index} src={getImageUrl(extraImg)} className={styles.extraImg} alt={`Extra ${index}`} />
-                ))}
+                <WithVisibility animationClass="fromBottom">
+                  <h1>Website Purpose</h1>
+                </WithVisibility>
+                <WithVisibility animationClass="fromBottom">
+                  <p>{project.purpose}</p>
+                </WithVisibility>
               </div>
-            )}
+              <div className={styles.block}>
+                <WithVisibility animationClass="fromBottom">
+                  <h1>Website Functionality</h1>
+                </WithVisibility>
+                <ul>
+                  {project.functionality.map((functionality, index) => (
+                    <WithVisibility key={index} animationClass="fromBottom">
+                      <li>{functionality}</li>
+                    </WithVisibility>
+                  ))}
+                </ul>
+              </div>
+              <div className={styles.block}>
+                <WithVisibility animationClass="fromBottom">
+                  <h1>Technologies Used</h1>
+                </WithVisibility>
+                <ul>
+                  {project.technologies.map((technology, index) => (
+                    <WithVisibility key={index} animationClass="fromBottom">
+                      <li>{technology}</li>
+                    </WithVisibility>
+                  ))}
+                </ul>
+              </div>
+              
+              {project.extraImg && (
+                <Swiper
+                  pagination={{
+                    dynamicBullets: true,
+                  }}
+                  navigation={true}
+                  modules={[Pagination, Navigation]}
+                  className={styles.extraImgContainer}
+                >
+                  {project.extraImg.map((extraImg, index) => (
+                    <SwiperSlide key={index}>
+                      <img
+                        src={getImageUrl(extraImg)}
+                        className={styles.extraImg}
+                        alt={`Extra ${index}`}
+                      />
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
+              )}
           </div>
           <div className={styles.right}>
             <WithVisibility animationClass="fromRight">

@@ -233,10 +233,6 @@
 }
 .heroImg {
     width: 70%;
-    
-    
-    
-    
     z-index: 1;
     /*background-color: #8D59F7;*/
     animation: show 0.7s ease-in;
