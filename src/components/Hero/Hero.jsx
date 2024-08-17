@@ -1,10 +1,10 @@
 import React from 'react';
-import { FaHeart, FaFacebook, FaGithub, FaLinkedin, FaDownload } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaDownload } from "react-icons/fa";
 import styles from "./Hero.module.css";
 import { getImageUrl } from '../../utils';
 import { FaArrowPointer, FaServer } from 'react-icons/fa6';
 import NavbarHero from '../Navbar/NavbarHero';
-import WithVisibility from '../WithVisibility/WithVisibility';
+
 
 export const Hero = () => {
   return (
@@ -26,15 +26,26 @@ export const Hero = () => {
                 <li className={styles.aboutItem}>
                     
                     <div className={styles.aboutItemText}>
-                      <FaArrowPointer className={styles.pointer}/>
-                      <h3 className={styles.front}>Frontend</h3>
+                      <div className={styles.containerButton}>
+                        <div className={styles.buttons}>
+                          <FaArrowPointer className={styles.icons}/>
+                          Frontend
+                        </div>
+                        
+                      </div>
+                      
                     </div>
                 </li>
                 <li className={styles.aboutItem}>
                     
                     <div className={styles.aboutItemText}>
-                      <FaServer className={styles.server}/>
-                      <h3 className={styles.back}>Backend</h3>
+                      <div className={styles.containerButton}>
+                          <div className={styles.buttons}>
+                            <FaServer className={styles.icons}/>
+                            Backend
+                          </div>
+                          
+                        </div>
                     </div>
                 </li>
                 
@@ -51,8 +62,6 @@ export const Hero = () => {
         </div>
       </div>
       <div className={styles.imgContainer}>
-        
-        
         <img 
             src={getImageUrl("hero/heroImage5555.png")} alt="Hero image of me" className={styles.heroImg}/>
         
