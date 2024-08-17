@@ -14,15 +14,21 @@ export const SoftSkills = () => {
                 return (
                 <WithVisibility animationClass="fromTop">
                 <div className={styles.softSkill}>
-                    <div className={styles.softSkillImageContainer}>
-                        <img src={getImageUrl(softskill.imageSrc)} alt={softskill.title} /> 
-                    </div>
-                    <p className={styles.title}>{softskill.title}</p>
-                    <div className={styles.description}>
-                    <div className={styles.softSkillImageContainer2}>
-                        <img src={getImageUrl(softskill.imageSrc)} alt={softskill.title} /> 
-                    </div>
-                        <p>{softskill.description}</p>
+                    <div className={styles.softSkillInner}>
+                        <div className={styles.softSkillImageContainer}>
+                            <img src={getImageUrl(softskill.imageSrc)} alt={softskill.title} /> 
+                        </div>
+                        <p className={styles.title}>{softskill.title}</p>
+                        <div className={styles.description}>
+                            <div className={styles.softSkillImageContainer2}>
+                                <img src={getImageUrl(softskill.imageSrc)} alt={softskill.title} /> 
+                            </div>
+                            <div>
+                                <p className={styles.title2}>{softskill.title}</p>
+                                <p className={styles.descriptionP}>{softskill.description}</p>
+                            </div>
+                            
+                        </div>
                     </div>
                 </div>
                 </WithVisibility>

@@ -1,83 +1,92 @@
 @import "../../vars.css";
 
+* {
+    box-sizing: border-box; /* Asegura que el padding y los bordes se incluyan en el ancho/alto */
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     color: var(--color-text);
     padding: 1em;
     background-color: #050709;
-    
 }
 
 .softSkills {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Por defecto, 4 columnas */
     padding: 2em;
-    gap: 5vw;
+    gap: 2vw; /* Ajustar el espacio entre tarjetas */
 }
 
-/* Pantallas medianas: 2 columnas */
-@media (max-width: 1024px) {
-    .softSkills {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
 
-/* Pantallas pequeñas: 2 columnas */
-@media (max-width: 768px) {
-    .softSkills {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
 
-/* Pantallas muy pequeñas: 2 columnas */
-@media (max-width: 480px) {
-    .softSkills {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-
-  .softSkill {
+.softSkill {
     position: relative;
-    
     border: 1px solid #8e59f780;
     border-radius: 20px;
     overflow: visible;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: background-color 0.3s;
-    padding: 1.5em;
-
+    padding: 2em;
+    perspective: 1000px; /* Necesario para el efecto 3D */
+    transition: transform 0.8s ease-in-out;
     
 }
 
+.softSkillInner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.4s ease-in-out; /* Duración y suavidad de la transición */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px; 
+}
+
 .softSkillImageContainer,
-.title {
-    z-index: 1;
-    transition: opacity 0.3s, visibility 0.3s;
+.title,
+.description {
+    backface-visibility: hidden; /* Oculta el lado posterior cuando está de espaldas */
 }
 
 .softSkillImageContainer {
     background: #8e59f7bb;
     border: 1px solid #8e59f780;
     border-radius: 10px;
-    padding: 30px;
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 120px;
+    max-height: 120px;
+    z-index: 1;
 }
+
 .softSkillImageContainer img {
-    max-width: 100px;
-    filter: invert(1) brightness(2); /*las imagenes son negras, con esto invierto el color para que sean blancas*/
+    max-width: 100%;
+    height: auto;
+    filter: invert(1) brightness(2); /* las imágenes son negras, con esto invierto el color para que sean blancas */
 }
 
 .title {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 900;
     color: #fff;
     margin-top: 10px;
+    text-align: center;
+}
+
+.description .title2 {
+    font-size: 1.2em;
+    font-weight: 900;
+    color: #000;
+    margin-top: 10px;
+    text-align: center;
 }
 
 .description {
@@ -86,50 +95,55 @@
     left: 0;
     width: 100%;
     height: 100%;
+    border-radius: 20px;
     background-color: #8e59f7bb;
     color: white;
     display: flex;
     align-items: flex-start; /* Alinea el contenido debajo de la imagen */
     justify-content: center;
     text-align: center;
-    font-size: 2em;
-    padding: 220px 20px 20px; /* Ajusta el padding para dar espacio a la imagen */
+    font-size: 1.5em;
+    padding: 20px;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.3s, visibility 2s;
+    transition: opacity 0.3s, visibility 0.3s;
     z-index: 2;
-    display: flex;
     flex-direction: column;
+    transform: rotateX(180deg); 
+}
+
+.description .descriptionP {
+    color: white;
+    font-size: 0.8em;
 }
 
 .softSkillImageContainer2 {
     background: #050709;
     border: 1px solid #8e59f780;
     border-radius: 50%;
-    padding: 30px;
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 120px;
+    max-height: 120px;
     position: absolute;
-    top: -100px; /* Esto hace que sobresalga por arriba */
+    top: -100px;
     left: 50%;
-    transform: translateX(-50%); /* Centra la imagen horizontalmente */
+    transform: translateX(-50%);
     z-index: 3;
-    
 }
+
 .softSkillImageContainer2 img {
-    max-width: 100px;
-    filter: invert(1) brightness(2); /*las imagenes son negras, con esto invierto el color para que sean blancas*/
+    max-width: 100%;
+    height: auto;
+    filter: invert(1) brightness(2); /* Las imágenes son negras, con esto invierto el color para que sean blancas */
 }
 
-
-
-.description p {
-    color: white;
-    font-size: 0.8em;
+.softSkill:hover .softSkillInner {
+    transform: rotateX(180deg); /* Voltea la tarjeta en el eje X al hacer hover */
 }
+
 .softSkill:hover .softSkillImageContainer,
 .softSkill:hover .title {
     opacity: 0;
@@ -139,24 +153,50 @@
 .softSkill:hover .description {
     opacity: 1;
     visibility: visible;
-    color: white;
 }
 
-@media screen and (max-width: 830px) {
-    .content {
-        flex-direction: column;
-        align-items: center;
-        gap: 34px;
-    }
-    
+
+/* Pantallas medianas: 2 columnas */
+@media (max-width: 1024px) {
     .softSkills {
-        width: 100%;
-        flex-direction: column;
-        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2vw;
     }
-    .history {
-        width: 100%;
-        gap: 9px;
+}
+
+/* Pantallas pequeñas: 2 columnas ajustadas */
+@media (max-width: 768px) {
+    .softSkills {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px; /* Reduce el espacio entre las tarjetas */
+        padding: 0 5px; /* Un poco de padding interno en los bordes */
     }
-    
+
+    .softSkill {
+        width: 100%; /* Asegura que cada tarjeta ocupe el 100% del ancho de su columna */
+    }
+    .softSkillImageContainer2 {
+        
+        top: -60px;
+        
+    }
+}
+
+/* Pantallas muy pequeñas: 2 columnas ajustadas */
+@media (max-width: 480px) {
+    .softSkills {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px; /* Aún menos espacio entre tarjetas */
+        padding: 0 5px; /* Un poco de padding interno en los bordes */
+        margin-top: 4em;
+    }
+
+    .softSkill {
+        width: 100%; /* Asegura que cada tarjeta ocupe el 100% del ancho de su columna */
+        height: 40vh;
+        padding: 0;
+    }
+    .description .descriptionP {
+        font-size: 16px;
+    }
 }
