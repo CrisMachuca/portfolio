@@ -1,7 +1,7 @@
 @import "../../vars.css";
 
 * {
-    box-sizing: border-box; /* Asegura que el padding y los bordes se incluyan en el ancho/alto */
+    box-sizing: border-box; 
     margin: 0;
     padding: 0;
 }
@@ -16,7 +16,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Por defecto, 4 columnas */
     padding: 2em;
-    gap: 2vw; /* Ajustar el espacio entre tarjetas */
+    gap: 2vw; 
 }
 
 
@@ -40,7 +40,7 @@
     height: 100%;
     position: relative;
     transform-style: preserve-3d;
-    transition: transform 0.4s ease-in-out; /* Duración y suavidad de la transición */
+    transition: transform 0.4s ease-in-out; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -156,7 +156,7 @@
 }
 
 
-/* Pantallas medianas: 2 columnas */
+/* Pantallas medianas: */
 @media (max-width: 1024px) {
     .softSkills {
         grid-template-columns: repeat(2, 1fr);
@@ -164,35 +164,30 @@
     }
 }
 
-/* Pantallas pequeñas: 2 columnas ajustadas */
+/* Pantallas pequeñas: */
 @media (max-width: 768px) {
     .softSkills {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px; /* Reduce el espacio entre las tarjetas */
-        padding: 0 5px; /* Un poco de padding interno en los bordes */
+        gap: 10px; 
+        padding: 0 5px; 
     }
 
     .softSkill {
-        width: 100%; /* Asegura que cada tarjeta ocupe el 100% del ancho de su columna */
+        width: 100%; 
     }
     .softSkillImageContainer2 {
-        
         top: -60px;
-        
     }
 }
 
-/* Pantallas muy pequeñas: 2 columnas ajustadas */
+/* Pantallas muy pequeñas:  */
 @media (max-width: 480px) {
     .softSkills {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 5px; /* Aún menos espacio entre tarjetas */
-        padding: 0 5px; /* Un poco de padding interno en los bordes */
+        gap: 5px; 
         margin-top: 4em;
     }
 
     .softSkill {
-        width: 100%; /* Asegura que cada tarjeta ocupe el 100% del ancho de su columna */
+        width: 100%; 
         height: 40vh;
         padding: 0;
     }
