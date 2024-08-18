@@ -2,16 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 
 
-.projectDetail {
-    padding: 2em auto;
-    text-align: center;
-    background-color: #0F141C;
-    background-image: url(../../../assets/projectDetail/hexagon.jpg);
-    background-size:100% 20%; /* Ajusta la imagen para cubrir todo el contenedor */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-position: top; /* Centra la imagen */
-    
-  }
+  .projectDetail {
+      padding: 2em auto;
+      text-align: center;
+      background-color: #0F141C;
+      background-image: url(../../../assets/projectDetail/hexagon.jpg);
+      background-size:100% 20%; /* Ajusta la imagen para cubrir todo el contenedor */
+      background-repeat: no-repeat; 
+      background-position: top; /* Centra la imagen */
+    }
   
   .imgContainer {
     background-color: transparent;
@@ -25,10 +24,8 @@
   .mainImg {
     width: 100%;
     max-width: 1200px;
-    height: 70vh;
-   
+    height: 65vh;
     background-color: #fff;
-    
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
@@ -79,18 +76,11 @@
     margin-top: 5em; 
   }
   
-  .swiper-slide {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%; /* Asegura que cada slide ocupe toda la altura del contenedor */
-  }
-  
   .extraImg {
     max-height: 100%; /* Se ajusta a la altura del contenedor */
     max-width: 100%; /* Asegura que no se desborde horizontalmente */
     margin: auto;
-    object-fit: contain; /* Ajusta el tamaño sin cortar la imagen */
+    object-fit: contain; 
     display: block;
   }
 
@@ -98,7 +88,7 @@
 /* Estilo para las flechas de navegación */
 :global(.swiper-button-prev),
 :global(.swiper-button-next){
-  color: #8D59F7 !important; /* Morado */
+  color: #8D59F7 !important; 
   font-weight: 600;
   border-radius: 50%;
   width: 40px;
@@ -112,7 +102,7 @@
 :global(.swiper-button-prev:hover),
 :global(.swiper-button-next:hover){
   
-  color: white; /* Color blanco para el ícono dentro de la flecha */
+  color: white; 
 }
 
 /* Ajustar la posición de las flechas */
@@ -137,8 +127,6 @@
   background-color: #8D59F7; /* Color morado para el círculo activo */
   opacity: 1; /* Asegúrate de que no sea transparente */
 }
-
-
 
   .title {
     font-size: 2.5em;
@@ -211,8 +199,6 @@
     text-align: left;
   }
 
-  
-
   .details, .banner {
     background-color: #171B22;
     color: white;
@@ -244,14 +230,14 @@
   }
   .block ul li {
     color: #666;
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-align: left;
     list-style: disc ;
   }
 
   .block p {
     color: #666;
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-align: left;
     list-style: disc ;
   }
@@ -259,8 +245,6 @@
   .leftList {
     font-size: 1em;
   }
-
- 
 
   .phone {
     background-color: #89f541;
@@ -308,7 +292,7 @@
     .mainTextContainer {
         display: grid;
         grid-template-columns: 1fr;
-        
+        padding: 20px 10px;
       }
       .projectDetail {
         background-size:100% 500px; /* Ajusta la imagen para cubrir todo el contenedor */
@@ -338,4 +322,34 @@
         max-height: 400px; 
         margin: 0 auto;
       }
+      .block ul li {
+        font-size: 1.1em;
+      }
+    
+      .block p {
+        font-size: 1.1em;
+        
+      }
+
+      .left {
+        margin:10px;
+        padding: 10px;
+      }
   }
+
+  @media (max-width: 480px) {
+  .block ul li {
+    font-size: 1.1em;
+    
+  }
+
+  .block p {
+    font-size: 1.1em;
+    
+  }
+  
+  .left {
+    margin:10px;
+    padding: 10px;
+  }
+}
