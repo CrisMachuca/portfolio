@@ -201,6 +201,13 @@
         padding: 0;
     }
     .description .descriptionP {
-        font-size: 16px;
+        font-size: 16px; 
+    }
+    .description {
+        padding: 10px;
+    }
+    .description .title2 {
+        font-size: 1em;
+        
     }
 }
