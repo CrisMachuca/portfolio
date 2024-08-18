@@ -7,28 +7,18 @@
     padding-top: 4em;
     padding-bottom: 4em;
     display: flex;
-    flex-direction: column; /* Asegura que el contenido se alinee en columna */
-    align-items: center; /* Centra horizontalmente */
+    flex-direction: column; 
+    align-items: center; 
     text-align: center;
 }
 
 .title {
     font-size: 60px;
-    margin-bottom: 1em;
-    
+    margin-bottom: 0.5em;
     text-align: center;
     font-weight: 900;
     font-family: var(--font-roboto);
-    /*filter: drop-shadow(15px 15px 5px #8D59F7);*/
-    display: inline-block; /* Necesario para que la rotación funcione correctamente */
-    /*transform: rotate(-4deg); /* Cambia el ángulo según lo necesario */
-    /*background: linear-gradient(
-        90deg, 
-        #8D59F7 20%,
-        rgb(255, 255, 255) 100%
-    );
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;*/
+    display: inline-block;
     color: white;
     border-bottom: 8px solid #8D59F7;
     
@@ -39,7 +29,7 @@
     text-align: center;
     padding: 0.5em 3em 1em 3em;
     max-width: 1200px;
-    font-size: 30px;
+    font-size: 1.5em;
     line-height: 1.7;
     -webkit-animation-name: zoomInn;
     animation-name: zoomInn;
@@ -163,9 +153,9 @@ li {
         font-size: 40px;
     }
     .subtitle {
-        font-size: 20px;
+        font-size: 1.1em;
         padding: 0.1em;
-        
+        text-align: left;
     }
     .connect {
         font-size: 15px;
