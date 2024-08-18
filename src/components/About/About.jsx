@@ -16,7 +16,7 @@ export const About = () => {
           <WithVisibility animationClass="fromBottom">
           <div className={styles.aboutText}>
           
-            <p className={styles.subtitle}>Hi, my name is <span className={styles.accent}>Cristina Machuca</span>  and I've spent most of my waking hours for the last few years learning, designing, programming and operating Web sites. Apart from this I love to travel, hike, listen to rock music and everything related to web development. I am deeply committed to the success of every project I work on and take great joy in the development process, from initial concept to final deployment. I am passionate about continuous learning, always seeking to improve my skills and stay updated with the latest technological trends.
+            <p className={styles.subtitle}>Hi, my name is <span className={styles.accent}>Cristina Machuca</span>  and I've spent most of my waking hours for the last few years learning, designing, programming and operating Web sites. Apart from this I love to travel, hike, listen to rock music and everything related to web development. I am passionate about continuous learning, always seeking to improve my skills and stay updated with the latest technological trends. I am deeply committed to the success of every project I work on and take great joy in the development process, from initial concept to final deployment. 
             </p>
             <WithVisibility animationClass="scale">
             <button className={styles.connect}>Let's Connect</button>
