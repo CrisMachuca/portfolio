@@ -55,8 +55,8 @@ export const Hero = () => {
         <div className={styles.heroBtns}>
             <a href="/CristinaMachucaResume.pdf" download className={styles.contactBtn}>Download CV <FaDownload /></a> 
             <div className={styles.links}>
-              <a href=""><FaLinkedin className={`${styles.social} ${styles.linkedin}`}/></a>
-              <a href=""><FaGithub className={`${styles.social} ${styles.github}`}/></a>
+              <a href="https://www.linkedin.com/in/cristina-machuca-martinez/" target="_blank"><FaLinkedin className={`${styles.social} ${styles.linkedin}`}/></a>
+              <a href="https://github.com/CrisMachuca" target="_blank"><FaGithub className={`${styles.social} ${styles.github}`}/></a>
             </div>
             
         </div>

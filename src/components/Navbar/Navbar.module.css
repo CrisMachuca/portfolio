@@ -43,6 +43,14 @@ a {
     text-decoration: none;
     color: #fff;
 }
+
+.logoTitle .title:focus {
+    background-color: transparent;
+    text-shadow: none;
+    box-shadow: none;
+    border: none;
+}
+
 .title span {
     color: #8D59F7;
 }
