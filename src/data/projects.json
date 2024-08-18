@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "category": "E-commerce",
+      "category": "e-commerce",
       "title": "FriKommerce",
       "imageSrc": "projects/under.jpg",
       "description": "E-commerce for geek merchandise",
@@ -77,7 +77,7 @@
     },
     {
       "id": 4,
-      "category": "Personal Project",
+      "category": "Landing Page",
       "title": "Star Wars Wiki",
       "imageSrc": "projects/starwars.png",
       "extraImg": ["projects/sw-mackbook.png", "projects/sw-mobile.png"],
