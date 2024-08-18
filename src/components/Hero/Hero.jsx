@@ -54,7 +54,7 @@ export const Hero = () => {
         </div>
       
         <div className={styles.heroBtns}>
-            {/* Aquí cambiamos el botón de descarga por uno que abre el modal */}
+           
             <button onClick={openModal} className={styles.contactBtn}>
               View CV <FaDownload />
             </button>
